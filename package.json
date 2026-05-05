@@ -1,0 +1,8 @@
+{
+  "name": "komatsu-battle",
+  "version": "1.0.0",
+  "description": "Komatsu Battle - Comparativo Técnico",
+  "engines": {
+    "node": "18"
+  }
+}
