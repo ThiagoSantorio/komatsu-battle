@@ -1,0 +1,499 @@
+{
+  "pc130lc": {
+    "brand": "komatsu",
+    "brandLabel": "Komatsu",
+    "category": "Escavadeira",
+    "model": "PC130LC-10M0",
+    "weightClass": 13500,
+    "meta": "13,9 t · 97 HP",
+    "headline": {
+      "peso": "13.070–13.940 kg",
+      "potencia": "97,3 HP / 70 kW",
+      "cacamba": "0,60–0,75 m³",
+      "forca_cacamba": "93,4 kN (ISO)",
+      "forca_braco": "67,5 kN (ISO)",
+      "tanque": "255 L",
+      "vel_max": "5,5 km/h",
+      "tracao": "12.500 kgf",
+      "vel_giro": "11,0 rpm"
+    },
+    "sections": {
+      "Motor": {
+        "Modelo": "Komatsu SAA4D95LE-5",
+        "Tipo": "4 tempos, arrefecido à água, injeção direta",
+        "Aspiração": "Turboalimentado, com pós-resfriador",
+        "Cilindros": "4",
+        "Diâmetro": "95 mm",
+        "Curso": "115 mm",
+        "Cilindrada": "3,26 L",
+        "Potência bruta (SAE J1995)": "97,3 HP",
+        "Potência líquida (ISO 9249)": "93,4 HP",
+        "Rotação nominal": "2.200 rpm",
+        "Governador": "Eletrônico",
+        "Padrão de emissão": "PROCONVE-MAR1"
+      },
+      "Sistema Hidráulico": {
+        "Tipo": "HydrauMind centro fechado com válvulas sensoras de carga",
+        "Modos de trabalho": "6",
+        "Bomba principal": "Pistão de deslocamento variável",
+        "Vazão máxima": "242 L/min",
+        "Alívio implementos": "31,9 MPa (325 kgf/cm²)",
+        "Alívio deslocamento": "34,8 MPa (355 kgf/cm²)",
+        "Alívio giro": "27,1 MPa (276 kgf/cm²)",
+        "Alívio piloto": "3,2 MPa (33 kgf/cm²)",
+        "Cilindro lança": "2 un. — 105 mm × 995 mm × 70 mm",
+        "Cilindro braço": "1 un. — 115 mm × 1175 mm × 75 mm",
+        "Cilindro caçamba": "1 un. — 95 mm × 885 mm × 65 mm"
+      },
+      "Comandos e Freios": {
+        "Controle direcional": "Duas alavancas com pedais",
+        "Transmissão": "Hidrostático",
+        "Força tração": "12.500 kgf (123 kN)",
+        "Inclinação máxima": "70% / 35°",
+        "Vel. alta": "5,5 km/h",
+        "Vel. baixa": "2,9 km/h",
+        "Freio serviço": "Trava hidráulica",
+        "Freio estacionamento": "Disco mecânico"
+      },
+      "Sistema de Giro": {
+        "Acionamento": "Hidrostático",
+        "Redução": "Engrenagem planetária",
+        "Lubrificação": "Banho de graxa",
+        "Velocidade giro": "11,0 rpm"
+      },
+      "Material Rodante": {
+        "Armação central": "Estrutura em X",
+        "Vedação": "Esteiras seladas",
+        "Ajuste tensão": "Hidráulico",
+        "Sapatas PC130-10M0 (cada lado)": "43",
+        "Roletes superiores PC130-10M0": "1",
+        "Roletes inferiores PC130-10M0": "7",
+        "Sapatas PC130LC-10M0 (cada lado)": "46",
+        "Roletes superiores PC130LC-10M0": "2",
+        "Roletes inferiores PC130LC-10M0": "8"
+      },
+      "Capacidades de Reabastecimento": {
+        "Reservatório combustível": "255 L",
+        "Líquido arrefecimento": "10,2 L",
+        "Óleo do motor": "12,5 L",
+        "Comando final (cada lado)": "2 × 2,1 L",
+        "Comando giro": "2,5 L",
+        "Reservatório hidráulico": "90 L"
+      },
+      "Pesos Operacionais": {
+        "PC130-10M0 sapata 500 mm": "13.070 kg",
+        "PC130-10M0 sapata 600 mm": "13.250 kg",
+        "PC130-10M0 sapata 700 mm": "13.430 kg",
+        "PC130LC-10M0 sapata 600 mm": "13.750 kg",
+        "PC130LC-10M0 sapata 700 mm": "13.940 kg"
+      },
+      "Faixa de Trabalho braço 2500mm": {
+        "Altura máx. escavação": "8.650 mm",
+        "Altura máx. despejo": "6.210 mm",
+        "Prof. máx. escavação": "5.520 mm",
+        "Prof. parede vertical": "4.980 mm",
+        "Alcance máx.": "8.290 mm",
+        "Raio giro mínimo": "2.450 mm",
+        "Força escavação caçamba ISO": "93,4 kN / 9.520 kgf",
+        "Força fechamento braço ISO": "67,5 kN / 6.880 kgf"
+      },
+      "Faixa de Trabalho braço 3000mm": {
+        "Altura máx. escavação": "8.930 mm",
+        "Altura máx. despejo": "6.615 mm",
+        "Prof. máx. escavação": "5.955 mm",
+        "Alcance máx.": "8.720 mm",
+        "Força escavação caçamba ISO": "93,4 kN / 9.520 kgf",
+        "Força fechamento braço ISO": "59,3 kN / 6.050 kgf"
+      },
+      "Dimensões": {
+        "Comprimento total braço 2500mm": "7.650 mm (LC) / 7.545 mm",
+        "Largura total": "2.500 mm",
+        "Altura cabine": "2.855 mm",
+        "Raio de giro traseiro": "2.250 mm",
+        "Bitola esteira": "1.990 mm",
+        "Largura ext. esteiras": "2.590 mm",
+        "Distância centro–extremidade traseira": "2.170 mm"
+      },
+      "Caçambas": {
+        "PC130-10M0": "0,60 m³ — 1.125 mm — 475 kg — 5 dentes",
+        "PC130LC-10M0 0,60": "0,60 m³ — 1.125 mm — 490 kg — 5 dentes",
+        "PC130LC-10M0 0,75": "0,75 m³ — 1.205 mm — 530 kg — 5 dentes"
+      },
+      "Eficiência e Tecnologia": {
+        "Redução consumo": "Até 16% vs PC130-8",
+        "Ganho potência motor": "3% superior (70 kW vs 68 kW)",
+        "Ampliação tempo trabalho": "22% mais que modelo anterior",
+        "Boost potência": "Função +9% força escavação por 8,5s",
+        "Resfriador de óleo": "37% maior — núcleo 17,8 m²",
+        "Modos operação": "P, E0, E1, E2, E3, L, B, ATT/P, ATT/E",
+        "Telemetria": "KOMTRAX via satélite padrão"
+      },
+      "Segurança e Cabine": {
+        "Cabine": "ROPS ISO 12117-2 e OPG nível 1 ISO 10262",
+        "Câmera": "Visão traseira padrão",
+        "Assento": "Suspensão com ajuste de peso",
+        "Cabine pressurizada": "Sim",
+        "Ar condicionado": "Automático",
+        "Idiomas monitor": "15 idiomas"
+      }
+    }
+  },
+  "wa200": {
+    "brand": "komatsu",
+    "brandLabel": "Komatsu",
+    "category": "Carregadeira",
+    "model": "WA200-6",
+    "weightClass": 10580,
+    "meta": "10,6 t · 128 HP",
+    "headline": {
+      "peso": "10.515–10.650 kg",
+      "potencia": "128 HP / 95,2 kW bruta",
+      "cacamba": "1,7–2,4 m³",
+      "forca_desagregacao": "9.500–10.450 kgf",
+      "carga_tomb_artic": "7.965–8.035 kg",
+      "altura_despejo": "2.760 mm",
+      "tanque": "177 L",
+      "vel_max": "34,5 km/h"
+    },
+    "sections": {
+      "Motor": {
+        "Modelo": "KOMATSU SAA4D107E-1",
+        "Tipo": "4 tempos, arrefecido a água",
+        "Aspiração": "Turboalimentado e pós-arrefecido",
+        "Cilindros": "4",
+        "Diâmetro x curso": "107 mm x 124 mm",
+        "Cilindrada": "4,46 L",
+        "Potência bruta SAE": "128 HP / 95,2 kW",
+        "Potência líquida ISO": "126 HP / 94 kW",
+        "Rotação nominal": "2.000 rpm",
+        "Acionamento ventilador": "Hidráulico",
+        "Injeção": "Common Rail / injeção direta",
+        "Padrão emissão": "PROCONVE/MAR-I"
+      },
+      "Transmissão": {
+        "Tipo": "Hidrostática HST, 1 bomba e 2 motores com seleção de velocidades",
+        "Vel 1a pneus 17.5-25": "4,0 a 13,0 km/h",
+        "Vel 2a": "13,0 km/h",
+        "Vel 3a": "20,0 km/h",
+        "Vel 4a máx": "34,5 km/h",
+        "Vel 4a pneus 20.5-25": "38,0 km/h"
+      },
+      "Sistema Hidráulico": {
+        "Bomba direcional": "Engrenagens — 85 L/min",
+        "Alívio sistema": "20,6 MPa (210 kgf/cm²)",
+        "Cilindro direcional": "2 un. — 70 mm x 453 mm",
+        "Bomba carregadeira": "Engrenagens — 54 L/min",
+        "Cilindro lança": "2 un. — 120 mm x 673,5 mm",
+        "Cilindro caçamba": "1 un. — 130 mm x 493 mm",
+        "Ciclo elevar": "5,9 s",
+        "Ciclo despejar": "1,4 s",
+        "Ciclo baixar": "3,6 s"
+      },
+      "Eixos e Freios": {
+        "Tração": "4 rodas",
+        "Eixo dianteiro": "Fixo, semiflutuante",
+        "Eixo traseiro": "Pino central, oscilação total 24°",
+        "Diferencial": "Torque proporcional",
+        "Freio serviço": "Disco banho de óleo, 4 rodas",
+        "Freio estacionamento": "Multi-discos banho de óleo"
+      },
+      "Capacidades de Reabastecimento": {
+        "Reservatório combustível": "177,0 L",
+        "Arrefecimento": "17,0 L",
+        "Motor": "15,5 L",
+        "Sistema hidráulico": "58,0 L",
+        "Eixos dianteiro e traseiro": "18,0 L",
+        "Caixa de transferência": "5,0 L"
+      },
+      "Dimensões pneus 17.5-25": {
+        "Bitola": "1.930 mm",
+        "Largura externa pneus": "2.375 mm",
+        "Distância entre eixos": "2.840 mm",
+        "Altura max. pino articulação": "3.635 mm",
+        "Altura livre ao solo": "425 mm",
+        "Altura total ROPS": "3.110 mm",
+        "Raio mínimo de giro": "5.100 mm"
+      },
+      "Caçamba Amontoamento": {
+        "Capacidade coroada": "2,0 m³",
+        "Capacidade rasa": "1,7 m³",
+        "Largura": "2.550 mm",
+        "Peso": "785 kg",
+        "Altura despejo 45°": "2.760 mm",
+        "Carga tombamento reta": "9.245 kg",
+        "Carga tombamento 38°": "7.965 kg",
+        "Força desagregação": "9.500 kgf",
+        "Peso operacional": "10.560 kg"
+      },
+      "Caçamba Escavação": {
+        "Capacidade coroada": "1,7 m³",
+        "Capacidade rasa": "1,4 m³",
+        "Largura": "2.550 mm",
+        "Peso": "740 kg",
+        "Carga tombamento reta": "9.305 kg",
+        "Carga tombamento 38°": "8.015 kg",
+        "Força desagregação": "10.450 kgf",
+        "Peso operacional": "10.515 kg"
+      },
+      "Caçamba Materiais Leves": {
+        "Capacidade coroada": "2,4 m³",
+        "Capacidade rasa": "2,0 m³",
+        "Força desagregação": "8.300 kgf",
+        "Peso operacional": "10.650 kg"
+      },
+      "Sistema Elétrico": {
+        "Alternador": "60 A",
+        "Baterias": "2 x 65 Ah, 12 V",
+        "Motor de partida": "24 V, 4,5 kW"
+      },
+      "Eficiência e Tecnologia": {
+        "Telemetria": "KOMTRAX padrão",
+        "Indicador ECO": "Sim",
+        "Modo-S": "Reduz tração em superfícies escorregadias",
+        "Controle de tração": "3 estágios de ajuste",
+        "Ventilador": "Inversão automática 2 min a cada 2h",
+        "Nível ruído externo": "107 dB(A)"
+      },
+      "Cabine": {
+        "Estrutura": "ROPS/FOPS",
+        "Cabine pressurizada": "Sim",
+        "Coluna da direção": "Inclinável",
+        "Alavanca controle": "PPC Controle Proporcional de Pressão",
+        "Visibilidade": "Sem colunas, vidro plano frontal"
+      }
+    }
+  },
+  "jd130p": {
+    "brand": "deere",
+    "brandLabel": "John Deere",
+    "category": "Escavadeira",
+    "model": "JD 130 P",
+    "weightClass": 13900,
+    "meta": "14,0 t · 93 HP",
+    "notes": {
+      "cacamba": "Prospecto JD não informa faixa oficial. 0,75 m³ é a caçamba de referência usada para cálculo de peso operacional."
+    },
+    "headline": {
+      "peso": "13.822–13.984 kg",
+      "potencia": "93 HP / 69 kW",
+      "cacamba": "0,75 m³ *",
+      "forca_cacamba": "96 kN (ISO)",
+      "forca_braco": "67 kN (ISO)",
+      "tanque": "280 L",
+      "vel_max": "5,5 km/h",
+      "tracao": "11.217 kg",
+      "vel_giro": "13,3 rpm"
+    },
+    "sections": {
+      "Motor": {
+        "Fabricante e modelo": "John Deere 4045H",
+        "Padrão emissão": "Tier 3 EPA / Estágio IIIA EU",
+        "Potência líquida ISO 9249": "69 kW (93 HP) a 2.000 rpm",
+        "Cilindros": "4",
+        "Deslocamento": "4,5 L",
+        "Capacidade desnível": "70% (35 graus)",
+        "Aspiração": "Turboalimentado, arrefecedor ar-ar"
+      },
+      "Transmissão": {
+        "Tipo": "2 velocidades com câmbio automático",
+        "Vel. baixa": "3,3 km/h",
+        "Vel. alta": "5,5 km/h",
+        "Força de tração": "11.217 kg"
+      },
+      "Sistema Hidráulico": {
+        "Tipo": "Centro aberto, operado por piloto",
+        "Bombas principais": "2 bombas pistão axial deslocamento variável",
+        "Fluxo máx cada bomba": "105 L/min",
+        "Pressão implemento": "34.336 kPa (4.980 psi)",
+        "Pressão deslocamento": "34.366 kPa (4.984 psi)",
+        "Pressão giro": "32.300 kPa (4.685 psi)",
+        "Amplificação potência": "36.300 kPa (5.265 psi)",
+        "Cilindro lança": "2 un. — 105 mm x 940 mm x 70 mm",
+        "Cilindro braço": "1 un. — 115 mm x 1.135 mm x 80 mm",
+        "Cilindro caçamba": "1 un. — 100 mm x 874 mm x 70 mm"
+      },
+      "Sistema Elétrico": {
+        "Baterias": "2 x 12 V",
+        "Alternador": "80 A",
+        "Luzes": "6 LED padrão"
+      },
+      "Material Rodante": {
+        "Roletes transportador cada lado": "1",
+        "Roletes esteira cada lado": "7",
+        "Sapatas cada lado": "46",
+        "Ajuste esteira": "Hidráulico",
+        "Corrente": "Vedada e lubrificada",
+        "Pressão solo sapata 600 mm": "34,8 kPa",
+        "Pressão solo sapata 700 mm": "30,3 kPa"
+      },
+      "Mecanismo de Giro": {
+        "Velocidade": "13,3 rpm",
+        "Torque": "34.000 Nm"
+      },
+      "Capacidades de Reabastecimento": {
+        "Tanque combustível": "280,0 L",
+        "Líquido arrefecimento": "23,5 L",
+        "Óleo do motor": "14,5 L",
+        "Engrenagem giro": "3,2 L",
+        "Engrenagem deslocamento cada": "4,0 L",
+        "Sistema hidráulico": "185,0 L",
+        "Tanque hidráulico": "69,0 L",
+        "Graxa rolamento giro": "5,0 kg"
+      },
+      "Pesos e Componentes": {
+        "Sapata 600 mm": "13.822 kg",
+        "Sapata 700 mm": "13.984 kg",
+        "Lança 4,6 m": "1.057 kg",
+        "Braço 2,52 m": "530 kg"
+      },
+      "Dimensões Operacionais braço 2,52m": {
+        "Força braço ISO": "67 kN",
+        "Força caçamba ISO": "96 kN",
+        "Alcance máx.": "8,32 m",
+        "Profundidade máx.": "5,57 m",
+        "Altura corte máx.": "8,60 m",
+        "Altura despejo máx.": "6,19 m",
+        "Raio giro mínimo": "2,40 m",
+        "Parede vertical máx.": "5,02 m"
+      },
+      "Dimensões da Máquina": {
+        "Comprimento total": "7,70 m",
+        "Altura total": "2,87 m",
+        "Comprimento material rodante": "3,75 m",
+        "Largura total sapata 600 mm": "2,59 m",
+        "Largura total sapata 700 mm": "2,69 m",
+        "Distância ao solo": "410 mm",
+        "Raio de giro traseiro": "2,19 m"
+      },
+      "Cabine": {
+        "Estrutura": "EPC ISO 12117-2 e FOPS Nível 1 ISO 10262",
+        "Assento": "Suspensão mecânica padrão, pneumática aquecida opcional",
+        "Climatizador": "Automático / AC / aquecedor / pressurizador",
+        "Padrão controle": "SAE com 2 alavancas",
+        "Cinto": "51 mm, não retrátil",
+        "Câmera": "Opcional"
+      },
+      "Conectividade": {
+        "Telemetria": "JDLink básica",
+        "Service ADVISOR Remoto": "Sim — diagnóstico sem técnico no campo",
+        "Tecnologia": "Powerwise Plus — amplificação hidráulica",
+        "Redução consumo": "Até 10% vs modelo anterior",
+        "Modos potência": "3"
+      }
+    }
+  },
+  "jd444g": {
+    "brand": "deere",
+    "brandLabel": "John Deere",
+    "category": "Carregadeira",
+    "model": "JD 444 G",
+    "weightClass": 10450,
+    "meta": "10,5 t · 124 HP",
+    "headline": {
+      "peso": "10.026–10.880 kg",
+      "potencia": "124 HP / 92 kW líquida",
+      "cacamba": "1,6–1,9 m³",
+      "forca_desagregacao": "8.000 kgf",
+      "carga_tomb_artic": "6.606–6.120 kg",
+      "altura_despejo": "2.650 mm",
+      "tanque": "190 L",
+      "vel_max": "36 km/h"
+    },
+    "sections": {
+      "Motor": {
+        "Fabricante e modelo": "John Deere PowerTech E 4045H",
+        "Padrão emissão": "Tier 3 MAR-I / Estágio IIIA EU",
+        "Cilindros": "4",
+        "Cilindrada": "4,5 L",
+        "Potência líquida ISO": "92 kW (124 HP) a 2.100 rpm",
+        "Potência bruta máx ISO": "97 kW (130 HP) a 2.100 rpm",
+        "Torque bruto máx": "525 Nm a 1.600 rpm",
+        "Elevação torque líquido": "26%",
+        "Injeção": "Common Rail alta pressão",
+        "Aspiração": "Turbocompressor com carga de ar resfriada"
+      },
+      "Transmissão": {
+        "Tipo": "PowerShift de contraeixo, estágio único",
+        "Controle": "Modulado eletronicamente, adaptável",
+        "Modos": "Manual / automático 1a–5a ou 2a–5a",
+        "Vel 1a frente": "7,3 km/h",
+        "Vel 2a frente": "12,1 km/h",
+        "Vel 3a frente": "23,1 km/h",
+        "Vel 4a frente": "36,0 km/h"
+      },
+      "Eixos e Freios": {
+        "Diferenciais": "Patinagem limitada ZF",
+        "Oscilação eixo traseiro": "24° (12° cada direção)",
+        "Freio serviço": "Multi-discos refrigerado a óleo",
+        "Freio estacionamento": "Multi-discos úmidos selados, mola automática"
+      },
+      "Sistema Hidráulico": {
+        "Bomba": "Pistão axial deslocamento variável, centro fechado",
+        "Vazão máx a 69 bar": "140 L/min",
+        "Pressão alívio": "24.821 kPa (3.600 psi)",
+        "Controles": "Joystick, válvula 2 funções",
+        "Direção": "Totalmente hidráulica ISO 5010",
+        "Ângulo articulação": "80° (40° cada)",
+        "Raio giro pneu externo": "4,74 m",
+        "Ciclo elevação": "5,9 s",
+        "Ciclo descarga": "1,0 s",
+        "Ciclo total": "9,3 s"
+      },
+      "Capacidades de Reabastecimento": {
+        "Tanque combustível": "190 L",
+        "Arrefecimento": "19 L",
+        "Óleo motor": "17,5 L",
+        "Reservatório transmissão": "18,5 L",
+        "Eixo dianteiro/traseiro cada": "22 L",
+        "Reservatório hidráulico": "92 L",
+        "Freio estacionamento": "0,35 L"
+      },
+      "Caçamba 1,9m3 Barra Z": {
+        "Capacidade coroada": "1,9 m³",
+        "Capacidade rasa": "1,6 m³",
+        "Largura": "2,52 m",
+        "Força desagregação": "8.000 kgf",
+        "Carga tomb. reta sem deflexão": "7.556 kg",
+        "Carga tomb. 40° sem deflexão": "6.606 kg",
+        "Carga tomb. 40° com deflexão": "6.120 kg",
+        "Carga nominal 50% ISO 14397-1": "3.303 kg",
+        "Peso operacional": "10.026 kg",
+        "Peso c/ contrapeso concreto": "10.880 kg"
+      },
+      "Com Engate Rápido e Caçamba": {
+        "Força desagregação": "6.700 kgf",
+        "Carga tomb. reta": "6.726 kg",
+        "Carga tomb. 40°": "5.833 kg",
+        "Peso operacional": "10.419 kg"
+      },
+      "Com Garfos": {
+        "Comprimento dente": "1,52 m",
+        "Carga nominal 50% ISO 14397-1": "1.797 kg",
+        "Peso operacional": "10.450 kg"
+      },
+      "Dimensões Caçamba 1,9m3": {
+        "Altura cabine": "3.126 mm",
+        "Distância entre eixos": "2.760 mm",
+        "Comprimento total": "6.747 m",
+        "Altura pino elevada": "3.580 mm",
+        "Altura despejo 45°": "2.650 mm",
+        "Raio giro carregador": "11,11 m",
+        "Prof. máx. escavação": "143 mm"
+      },
+      "Sistema Elétrico": {
+        "Sistema": "24 V — alternador 80 A",
+        "Baterias": "2 x 12 V, 950 CCA cada"
+      },
+      "Pneus Padrão": {
+        "Modelo": "Michelin 17.5 R 25, 1 Star L-3",
+        "Largura banda rodagem": "1.900 mm",
+        "Largura sobre pneus": "2.415 mm"
+      },
+      "Conectividade": {
+        "Telemetria": "JDLink de série",
+        "Connected Support": "Monitoramento remoto e diagnóstico preditivo",
+        "Redução combustível": "Até 18% vs líderes da categoria"
+      }
+    }
+  }
+}
