@@ -53,7 +53,7 @@ exports.handler = async (event) => {
     console.log('KEY EXISTS:', !!apiKey, 'LENGTH:', apiKey?.length);
     if (!apiKey) return { statusCode: 500, headers: corsHeaders, body: JSON.stringify({ error: 'API key não configurada' }) };
 
-    const result = await callAnthropic({ model: 'claude-sonnet-4-20250514', max_tokens: 1000, system: systemPrompt, messages }, apiKey);
+    const result = await callAnthropic({ model: 'claude-sonnet-4-6', max_tokens: 1000, system: systemPrompt, messages }, apiKey);
     console.log('RESULT STATUS:', result.status);
 
     if (result.status !== 200) return { statusCode: result.status, headers: corsHeaders, body: JSON.stringify({ error: result.body.error?.message || JSON.stringify(result.body) }) };
