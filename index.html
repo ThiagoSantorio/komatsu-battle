@@ -954,7 +954,12 @@ async function sendMessage() {
     const res = await fetch('/.netlify/functions/agent', {
       method:'POST',
       headers:{'Content-Type':'application/json'},
-      body: JSON.stringify({systemPrompt: buildSystemPrompt(activeAgent), messages: chatMessages})
+      body: JSON.stringify({
+        systemPrompt: buildSystemPrompt(activeAgent),
+        messages: chatMessages,
+        selectedModels: agentSelectedModels,
+        category: activeAgent
+      })
     });
     const data = await res.json();
     const reply = data.reply || data.error || 'Erro ao processar resposta.';
