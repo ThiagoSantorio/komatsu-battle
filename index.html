@@ -21,6 +21,8 @@
     --yellow: #ffb81c;
     --exc: #3b82f6;
     --car: #f59e0b;
+    --mot: #10b981;
+    --tra: #ef4444;
     --green: #10b981;
     --red: #ef4444;
   }
@@ -40,7 +42,6 @@
 
   .app { max-width: 480px; margin: 0 auto; min-height: 100vh; padding-bottom: 90px; }
 
-  /* LOADING INICIAL */
   .app-loading {
     display: flex; flex-direction: column;
     align-items: center; justify-content: center;
@@ -85,7 +86,7 @@
   .tab {
     flex: 1; background: none; border: none; color: var(--text-dim);
     font-family: 'Barlow Condensed', sans-serif; font-weight: 700;
-    font-size: 12px; letter-spacing: 1.5px; text-transform: uppercase;
+    font-size: 11px; letter-spacing: 1px; text-transform: uppercase;
     padding: 9px 4px; border-radius: 7px; cursor: pointer; transition: all .18s;
   }
   .tab.active { background: var(--yellow); color: #000; }
@@ -95,7 +96,22 @@
   .screen.active { display: block; }
   @keyframes fadeIn { from { opacity:0; transform:translateY(6px); } to { opacity:1; transform:translateY(0); } }
 
-  /* CARDS MÁQUINAS */
+  /* CATEGORY SELECTOR */
+  .cat-label {
+    font-family: 'Barlow Condensed', sans-serif; font-weight: 700;
+    font-size: 11px; color: var(--text-mute); text-transform: uppercase; letter-spacing: 2px;
+    margin-bottom: 8px; margin-top: 4px;
+  }
+  .cat-pills { display: flex; gap: 5px; flex-wrap: wrap; margin-bottom: 16px; }
+  .cat-pill {
+    background: var(--bg-card); border: 1px solid var(--border);
+    color: var(--text-dim); padding: 6px 12px; border-radius: 100px;
+    font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px;
+    cursor: pointer; transition: all .15s; font-family: inherit;
+  }
+  .cat-pill.active { background: var(--yellow); color: #000; border-color: var(--yellow); }
+
+  /* CARDS */
   .step { margin-bottom: 20px; }
   .step-label {
     display: inline-flex; align-items: center; gap: 8px;
@@ -114,11 +130,11 @@
   .machine-card.disabled { opacity: .3; cursor: not-allowed; pointer-events: none; }
 
   .m-cat { font-size: 9px; color: var(--text-mute); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 3px; font-weight: 500; }
-  .m-model { font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 20px; line-height: 1; margin-bottom: 7px; }
+  .m-model { font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 18px; line-height: 1; margin-bottom: 7px; }
   .m-meta { font-size: 10px; color: var(--text-dim); }
   .brand-tag { display: inline-block; font-size: 8px; padding: 2px 5px; border-radius: 3px; text-transform: uppercase; letter-spacing: 1px; font-weight: 700; margin-bottom: 5px; }
   .brand-tag.komatsu { background: var(--yellow); color: #000; }
-  .brand-tag.deere { background: #367c2b; color: #fff; }
+  .brand-tag.john_deere { background: #367c2b; color: #fff; }
 
   .compare-btn {
     width: 100%; background: var(--yellow); color: #000; border: none;
@@ -142,7 +158,7 @@
     display: grid; grid-template-columns: 1fr auto 1fr; gap: 6px; align-items: center;
   }
   .versus-side { text-align: center; }
-  .versus-side .m-model { font-size: 16px; margin-bottom: 0; }
+  .versus-side .m-model { font-size: 15px; margin-bottom: 0; }
   .versus-x { font-family: 'Barlow Condensed', sans-serif; font-weight: 800; font-size: 22px; color: var(--yellow); }
 
   .compare-table { background: var(--bg-card); border: 1px solid var(--border); border-radius: 12px; overflow: hidden; margin-bottom: 14px; }
@@ -212,16 +228,20 @@
   }
   .agent-card.exc { background: rgba(59,130,246,.08); border-color: rgba(59,130,246,.2); }
   .agent-card.car { background: rgba(245,158,11,.08); border-color: rgba(245,158,11,.2); }
+  .agent-card.mot { background: rgba(16,185,129,.08); border-color: rgba(16,185,129,.2); }
+  .agent-card.tra { background: rgba(239,68,68,.08); border-color: rgba(239,68,68,.2); }
   .agent-card.active.exc { border-color: var(--exc); box-shadow: 0 0 0 1px var(--exc); }
   .agent-card.active.car { border-color: var(--car); box-shadow: 0 0 0 1px var(--car); }
+  .agent-card.active.mot { border-color: var(--mot); box-shadow: 0 0 0 1px var(--mot); }
+  .agent-card.active.tra { border-color: var(--tra); box-shadow: 0 0 0 1px var(--tra); }
   .agent-card:active { transform: scale(.97); }
   .agent-icon { font-size: 24px; margin-bottom: 7px; }
-  .agent-name { font-family: 'Barlow Condensed', sans-serif; font-weight: 800; font-size: 15px; letter-spacing: 1px; margin-bottom: 4px; }
+  .agent-name { font-family: 'Barlow Condensed', sans-serif; font-weight: 800; font-size: 13px; letter-spacing: 1px; margin-bottom: 4px; }
   .agent-name.exc { color: var(--exc); }
   .agent-name.car { color: var(--car); }
+  .agent-name.mot { color: var(--mot); }
+  .agent-name.tra { color: var(--tra); }
   .agent-desc { font-size: 10px; color: var(--text-dim); line-height: 1.4; }
-  .agent-models { margin-top: 7px; }
-  .agent-model-tag { font-size: 9px; color: var(--text-mute); font-weight: 600; display: block; }
 
   .agent-active-bar {
     background: var(--bg-card); border: 1px solid var(--border); border-radius: 10px;
@@ -232,9 +252,13 @@
   .agent-dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
   .agent-dot.exc { background: var(--exc); box-shadow: 0 0 6px var(--exc); }
   .agent-dot.car { background: var(--car); box-shadow: 0 0 6px var(--car); }
+  .agent-dot.mot { background: var(--mot); box-shadow: 0 0 6px var(--mot); }
+  .agent-dot.tra { background: var(--tra); box-shadow: 0 0 6px var(--tra); }
   .agent-active-name { font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 13px; letter-spacing: 1px; text-transform: uppercase; }
   .agent-active-name.exc { color: var(--exc); }
   .agent-active-name.car { color: var(--car); }
+  .agent-active-name.mot { color: var(--mot); }
+  .agent-active-name.tra { color: var(--tra); }
   .agent-active-hint { font-size: 10px; color: var(--text-mute); margin-left: auto; }
 
   .quick-questions { display: flex; flex-direction: column; gap: 6px; margin-bottom: 14px; }
@@ -248,9 +272,13 @@
   .bubble.agent { background: var(--bg-card); border: 1px solid var(--border); color: var(--text); }
   .bubble.agent.exc { border-left: 3px solid var(--exc); }
   .bubble.agent.car { border-left: 3px solid var(--car); }
+  .bubble.agent.mot { border-left: 3px solid var(--mot); }
+  .bubble.agent.tra { border-left: 3px solid var(--tra); }
   .bubble .agent-label { font-size: 9px; text-transform: uppercase; letter-spacing: 1.5px; font-weight: 700; margin-bottom: 6px; }
   .bubble .agent-label.exc { color: var(--exc); }
   .bubble .agent-label.car { color: var(--car); }
+  .bubble .agent-label.mot { color: var(--mot); }
+  .bubble .agent-label.tra { color: var(--tra); }
   .bubble strong { color: var(--yellow); }
 
   .typing { display: flex; gap: 4px; align-items: center; padding: 4px 0; }
@@ -301,105 +329,52 @@
     align-items: center; justify-content: center;
     padding: 30px;
   }
-
   .password-box {
-    background: var(--bg-card);
-    border: 1px solid var(--border);
-    border-radius: 16px;
-    padding: 28px 24px;
-    width: 100%;
-    max-width: 340px;
-    text-align: center;
+    background: var(--bg-card); border: 1px solid var(--border); border-radius: 16px;
+    padding: 28px 24px; width: 100%; max-width: 340px; text-align: center;
   }
-
-  .password-icon {
-    font-size: 36px;
-    margin-bottom: 12px;
-  }
-
-  .password-title {
-    font-family: "Barlow Condensed", sans-serif;
-    font-weight: 800;
-    font-size: 22px;
-    letter-spacing: 1px;
-    color: var(--yellow);
-    margin-bottom: 6px;
-  }
-
-  .password-desc {
-    font-size: 12px;
-    color: var(--text-mute);
-    margin-bottom: 20px;
-    line-height: 1.5;
-  }
-
+  .password-icon { font-size: 36px; margin-bottom: 12px; }
+  .password-title { font-family: "Barlow Condensed", sans-serif; font-weight: 800; font-size: 22px; letter-spacing: 1px; color: var(--yellow); margin-bottom: 6px; }
+  .password-desc { font-size: 12px; color: var(--text-mute); margin-bottom: 20px; line-height: 1.5; }
   .password-input {
-    width: 100%;
-    background: var(--bg);
-    border: 1px solid var(--border);
-    border-radius: 10px;
-    padding: 13px 16px;
-    color: var(--text);
-    font-family: inherit;
-    font-size: 16px;
-    text-align: center;
-    letter-spacing: 4px;
-    outline: none;
-    margin-bottom: 10px;
-    transition: border-color .15s;
+    width: 100%; background: var(--bg); border: 1px solid var(--border); border-radius: 10px;
+    padding: 13px 16px; color: var(--text); font-family: inherit; font-size: 16px;
+    text-align: center; letter-spacing: 4px; outline: none; margin-bottom: 10px; transition: border-color .15s;
   }
-
   .password-input:focus { border-color: var(--yellow); }
-
   .password-btn {
-    width: 100%;
-    background: var(--yellow);
-    color: #000;
-    border: none;
-    padding: 14px;
-    border-radius: 10px;
-    font-family: "Barlow Condensed", sans-serif;
-    font-weight: 800;
-    font-size: 16px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    cursor: pointer;
-    transition: all .15s;
+    width: 100%; background: var(--yellow); color: #000; border: none; padding: 14px; border-radius: 10px;
+    font-family: "Barlow Condensed", sans-serif; font-weight: 800; font-size: 16px; letter-spacing: 2px;
+    text-transform: uppercase; cursor: pointer; transition: all .15s;
   }
-
   .password-btn:active { transform: scale(.98); }
-
-  .password-error {
-    font-size: 11px;
-    color: #ef4444;
-    margin-top: 8px;
-    display: none;
-  }
-
+  .password-error { font-size: 11px; color: #ef4444; margin-top: 8px; display: none; }
   .password-cancel {
-    background: none;
-    border: none;
-    color: var(--text-mute);
-    font-size: 11px;
-    margin-top: 12px;
-    cursor: pointer;
-    font-family: inherit;
-    display: block;
-    width: 100%;
+    background: none; border: none; color: var(--text-mute); font-size: 11px;
+    margin-top: 12px; cursor: pointer; font-family: inherit; display: block; width: 100%;
   }
+
+  /* MODELO SELECTOR */
+  .model-selector { margin-bottom: 12px; }
+  .model-selector-label { font-size: 10px; color: var(--text-mute); text-transform: uppercase; letter-spacing: 1.5px; font-weight: 600; margin-bottom: 6px; }
+  .model-pills { display: flex; gap: 5px; flex-wrap: wrap; }
+  .model-pill {
+    background: var(--bg-card); border: 1px solid var(--border); color: var(--text-dim);
+    padding: 5px 10px; border-radius: 6px; font-size: 10px; font-weight: 600;
+    cursor: pointer; transition: all .15s; font-family: inherit;
+  }
+  .model-pill.active { background: var(--yellow); color: #000; border-color: var(--yellow); }
 </style>
 </head>
 <body>
 
 <div class="app" id="app">
-  <!-- Loading inicial enquanto carrega o JSON -->
   <div class="app-loading" id="appLoading">
     <div class="brand-mark">K</div>
     <p>Carregando base de dados...</p>
   </div>
 </div>
 
-<!-- CHAT INPUT FIXO -->
 <div class="chat-input-wrap" id="chatInputWrap">
   <div class="chat-input-row">
     <textarea class="chat-textarea" id="chatTextarea" placeholder="Pergunte ao agente..." rows="1"></textarea>
@@ -413,81 +388,44 @@
 
 <script>
 // ============================= CONFIG =============================
-const specLabels = {
-  peso:'Peso operacional', potencia:'Potência', cacamba:'Cap. caçamba',
-  forca_cacamba:'Força escav. caçamba', forca_braco:'Força escav. braço',
-  forca_desagregacao:'Força desagregação', carga_tomb_artic:'Carga tomb. (40°)',
-  altura_despejo:'Altura despejo (45°)', tanque:'Tanque combustível',
-  vel_max:'Vel. máx.', tracao:'Força tração', vel_giro:'Vel. giro'
-};
-
-const specLayout = {
-  'Escavadeira': ['peso','potencia','cacamba','forca_cacamba','forca_braco','tanque','vel_max','vel_giro'],
-  'Carregadeira': ['peso','potencia','cacamba','forca_desagregacao','carga_tomb_artic','altura_despejo','tanque','vel_max']
-};
-
-const proKomatsu = {
-  'pc130lc_jd130p': [
-    'Motor <strong>4,4 HP mais potente</strong> (97,3 vs 93 HP) com força de braço equivalente.',
-    'Sistema HydrauMind + <strong>6 modos de trabalho</strong> (P, E0–E3, L, B) — JD oferece só 3 modos.',
-    'Componentes <strong>100% Komatsu</strong> (motor, bomba, válvulas) + KOMTRAX nativo.'
-  ],
-  'wa200_jd444g': [
-    'Força de desagregação até <strong>30% superior</strong> (10.450 vs 8.000 kgf).',
-    'Carga de tombamento articulada <strong>+20%</strong> (7.965 vs 6.606 kg) — mais carga em ciclo "V".',
-    'Transmissão HST + Modo-S — JD usa PowerShift sem ajuste fino de tração.'
-  ]
-};
-
-const agentConfig = {
-  exc: {
-    name: 'AGENTE ESCAVADEIRAS', type: 'exc',
-    machines: ['pc130lc', 'jd130p'],
-    quickQ: [
-      'Qual tem maior reservatório hidráulico?',
-      'Diferença do sistema HydrauMind na prática?',
-      'Qual escava mais fundo com braço de 2,5 m?',
-      'Qual tem mais roletes no material rodante?',
-      'Diferença de torque de giro entre as duas?',
-      'Qual a cabine mais completa?'
-    ]
-  },
-  car: {
-    name: 'AGENTE CARREGADEIRAS', type: 'car',
-    machines: ['wa200', 'jd444g'],
-    quickQ: [
-      'Qual tem maior reservatório hidráulico?',
-      'Diferença de força de desagregação?',
-      'Como funciona HST vs PowerShift na prática?',
-      'Qual tem maior carga de tombamento articulada?',
-      'Qual tem maior ângulo de articulação?',
-      'Ciclo V — qual é mais ágil?'
-    ]
-  }
-};
-
-// ============================= STATE =============================
-let machines = {};
-let selected = { komatsu: null, competitor: null };
-let activeFilter = 'all';
+const AGENT_PASSWORD = 'bauko2026';
+let machinesData = {}; // JSON completo
+let activeCategory = 'escavadeira'; // categoria ativa no comparar
+let selectedKomatsu = null;
+let selectedJD = null;
 let activeAgent = null;
+let agentSelectedModels = { komatsu: null, jd: null };
 let chatMessages = [];
 let isLoading = false;
+let agentUnlocked = false;
+let searchFilter = 'all';
+
+const categoryConfig = {
+  escavadeira:    { label: 'Escavadeira',       icon: '🦾', agentType: 'exc', color: 'exc' },
+  carregadeira:   { label: 'Carregadeira',      icon: '🚜', agentType: 'car', color: 'car' },
+  motoniveladora: { label: 'Motoniveladora',    icon: '🛣️', agentType: 'mot', color: 'mot' },
+  trator_esteira: { label: 'Trator de Esteira', icon: '🔩', agentType: 'tra', color: 'tra' }
+};
+
+const agentQuickQ = {
+  exc: ['Qual tem maior reservatório hidráulico?','Diferença do sistema HydrauMind na prática?','Qual escava mais fundo?','Qual tem mais roletes no material rodante?','Diferença de torque de giro?','Qual a cabine mais completa?'],
+  car: ['Diferença de força de desagregação?','Como funciona HST vs PowerShift na prática?','Qual tem maior carga de tombamento?','Qual tem maior capacidade de caçamba?','Ciclo V — qual é mais ágil?','Qual tem maior tanque de combustível?'],
+  mot: ['Diferença entre 4WD e 6WD na prática?','Qual tem maior comprimento de lâmina?','Diferença do sistema Cross Slope?','Qual tem mais força de tração na lâmina?','Qual é mais pesada e por quê?','Diferença da transmissão PowerShift Plus?'],
+  tra: ['Qual tem maior força de tração?','Diferença da lâmina semi-U vs universal?','Qual tem maior tanque de combustível?','Qual é o mais potente por tonelada?','Diferença de velocidade máxima?','Qual tem sistema de controle mais avançado?']
+};
 
 // ============================= INIT =============================
 async function init() {
   try {
-    // Carrega JSON externo
     const res = await fetch('./machines.json');
-    machines = await res.json();
+    machinesData = await res.json();
     renderApp();
-  } catch (e) {
+  } catch(e) {
     document.getElementById('appLoading').innerHTML = `
       <div style="text-align:center;color:#ef4444;padding:40px 20px">
         <div style="font-size:30px;margin-bottom:12px">⚠</div>
-        <div style="font-size:13px">Erro ao carregar base de dados.<br>Verifique se machines.json está na mesma pasta.</div>
-      </div>
-    `;
+        <div style="font-size:13px">Erro ao carregar base de dados.</div>
+      </div>`;
   }
 }
 
@@ -513,17 +451,13 @@ function renderApp() {
     </div>
 
     <div class="main">
+
       <!-- COMPARAR -->
       <div class="screen active" id="screen-select">
-        <div class="step">
-          <div class="step-label">Komatsu</div>
-          <div class="machine-grid" id="komatsu-grid"></div>
-        </div>
-        <div class="step">
-          <div class="step-label">Concorrente</div>
-          <div class="machine-grid" id="competitor-grid"></div>
-        </div>
-        <button class="compare-btn" id="compareBtn" disabled>Comparar</button>
+        <div class="cat-label">Categoria</div>
+        <div class="cat-pills" id="catPills"></div>
+        <div id="compareGrids"></div>
+        <button class="compare-btn" id="compareBtn" disabled onclick="renderCompare()">Comparar</button>
         <div class="source-note">Dados extraídos dos prospectos oficiais</div>
       </div>
 
@@ -537,38 +471,16 @@ function renderApp() {
       <div class="screen" id="screen-search">
         <div class="search-wrap">
           <svg class="search-icon" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-          <input type="text" class="search-input" id="searchInput" placeholder="Busca livre no prospecto inteiro..." autocomplete="off">
+          <input type="text" class="search-input" id="searchInput" placeholder="Busca livre: modelo, spec, valor..." autocomplete="off">
           <button class="search-clear" id="searchClear" onclick="clearSearch()">✕</button>
         </div>
-        <div class="filter-chips">
-          <button class="chip active" data-filter="all">Todas</button>
-          ${Object.keys(machines).map(id => `<button class="chip" data-filter="${id}">${machines[id].model.split(' ')[0]}</button>`).join('')}
-        </div>
+        <div class="filter-chips" id="searchChips"></div>
         <div id="searchResults"></div>
       </div>
 
       <!-- AGENTES -->
       <div class="screen" id="screen-agents">
-        <div class="agents-grid">
-          <button class="agent-card exc" id="agent-exc" onclick="selectAgent('exc')">
-            <div class="agent-icon">🦾</div>
-            <div class="agent-name exc">ESCAVADEIRAS</div>
-            <div class="agent-desc">PC130LC vs JD 130P — busca no prospecto e na internet.</div>
-            <div class="agent-models">
-              <span class="agent-model-tag">▸ PC130LC-10M0</span>
-              <span class="agent-model-tag">▸ JD 130 P</span>
-            </div>
-          </button>
-          <button class="agent-card car" id="agent-car" onclick="selectAgent('car')">
-            <div class="agent-icon">🚜</div>
-            <div class="agent-name car">CARREGADEIRAS</div>
-            <div class="agent-desc">WA200-6 vs JD 444G — busca no prospecto e na internet.</div>
-            <div class="agent-models">
-              <span class="agent-model-tag">▸ WA200-6</span>
-              <span class="agent-model-tag">▸ JD 444 G</span>
-            </div>
-          </button>
-        </div>
+        <div class="agents-grid" id="agentsGrid"></div>
 
         <div class="agent-active-bar" id="agentBar">
           <div class="agent-dot" id="agentDot"></div>
@@ -576,11 +488,13 @@ function renderApp() {
           <div class="agent-active-hint">pronto para responder</div>
         </div>
 
+        <div id="agentModelSelectors" style="display:none"></div>
+
         <div id="agentWelcome">
           <div class="empty-state">
             <div class="empty-icon">🤖</div>
             <strong style="color:var(--text-dim)">Selecione um agente acima</strong><br>
-            <span style="font-size:11px">Consulta o prospecto completo + internet em tempo real</span>
+            <span style="font-size:11px">Consulte qualquer modelo da base de dados em tempo real</span>
           </div>
         </div>
 
@@ -595,270 +509,423 @@ function renderApp() {
     <div class="footer">© 2026 · <span>BAUKO</span> · DEMO</div>
   `;
 
-  // Inicia event listeners
-  renderMachines();
-  document.getElementById('compareBtn').addEventListener('click', renderCompare);
-  document.getElementById('searchInput').addEventListener('input', e => runSearch(e.target.value));
-  document.querySelectorAll('.chip').forEach(c => c.addEventListener('click', () => setFilter(c.dataset.filter)));
-  
-  // Textarea auto-resize e enter
-  const ta = document.getElementById('chatTextarea');
-  ta.addEventListener('input', () => { ta.style.height = 'auto'; ta.style.height = Math.min(ta.scrollHeight, 100) + 'px'; });
-  ta.addEventListener('keydown', e => { if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); sendMessage(); } });
-
+  buildCatPills();
+  renderCompareGrids();
+  buildSearchChips();
+  buildAgentsGrid();
   runSearch('');
+
+  const ta = document.getElementById('chatTextarea');
+  ta.addEventListener('input', () => { ta.style.height='auto'; ta.style.height=Math.min(ta.scrollHeight,100)+'px'; });
+  ta.addEventListener('keydown', e => { if(e.key==='Enter'&&!e.shiftKey){e.preventDefault();sendMessage();} });
+  document.getElementById('searchInput').addEventListener('input', e => runSearch(e.target.value));
 }
 
-// ============================= SENHA =============================
-const AGENT_PASSWORD = 'bauko2026';
-let agentUnlocked = false;
-
-function checkAgentPassword() {
-  const overlay = document.getElementById('passwordOverlay');
-  const input = document.getElementById('passwordInput');
-  const error = document.getElementById('passwordError');
-  const val = input.value.trim();
-  if (val === AGENT_PASSWORD) {
-    agentUnlocked = true;
-    overlay.style.display = 'none';
-    document.getElementById('screen-agents').classList.add('active');
-    if (activeAgent) document.getElementById('chatInputWrap').classList.add('visible');
-    input.value = '';
-    error.style.display = 'none';
-  } else {
-    error.style.display = 'block';
-    input.value = '';
-    input.focus();
-  }
+// ============================= CATEGORIA =============================
+function buildCatPills() {
+  const el = document.getElementById('catPills');
+  el.innerHTML = Object.keys(categoryConfig).map(k => {
+    const c = categoryConfig[k];
+    return `<button class="cat-pill${k===activeCategory?' active':''}" onclick="setCategory('${k}')">${c.icon} ${c.label}</button>`;
+  }).join('');
 }
 
-// ============================= TABS =============================
-function switchTab(tab) {
-  document.querySelectorAll('.tab').forEach(t => t.classList.toggle('active', t.dataset.tab === tab));
-  ['screen-select','screen-result','screen-search','screen-agents'].forEach(s => {
-    const el = document.getElementById(s);
-    if (el) el.classList.remove('active');
-  });
-  document.getElementById('chatInputWrap').classList.remove('visible');
-
-  if (tab === 'compare') document.getElementById('screen-select').classList.add('active');
-  else if (tab === 'search') {
-    document.getElementById('screen-search').classList.add('active');
-    setTimeout(() => document.getElementById('searchInput').focus(), 100);
-  } else if (tab === 'agents') {
-    if (!agentUnlocked) {
-      document.getElementById('screen-agents').classList.add('active');
-      document.getElementById('passwordOverlay').style.display = 'flex';
-      setTimeout(() => document.getElementById('passwordInput').focus(), 100);
-    } else {
-      document.getElementById('screen-agents').classList.add('active');
-      if (activeAgent) document.getElementById('chatInputWrap').classList.add('visible');
-    }
-  }
-  window.scrollTo(0, 0);
+function setCategory(cat) {
+  activeCategory = cat;
+  selectedKomatsu = null;
+  selectedJD = null;
+  buildCatPills();
+  renderCompareGrids();
+  document.getElementById('compareBtn').disabled = true;
 }
 
-// ============================= COMPARE =============================
-function renderMachines() {
-  const kg = document.getElementById('komatsu-grid');
-  const cg = document.getElementById('competitor-grid');
-  Object.keys(machines).forEach(id => {
-    const m = machines[id];
-    const card = document.createElement('button');
-    card.className = 'machine-card';
-    card.dataset.id = id; card.dataset.category = m.category;
-    card.innerHTML = `<div class="brand-tag ${m.brand}">${m.brandLabel}</div><div class="m-cat">${m.category}</div><div class="m-model">${m.model}</div><div class="m-meta">${m.meta}</div>`;
-    card.onclick = () => selectMachine(id);
-    if (m.brand === 'komatsu') kg.appendChild(card);
-    else cg.appendChild(card);
-  });
+function renderCompareGrids() {
+  const el = document.getElementById('compareGrids');
+  const cat = machinesData[activeCategory];
+  if (!cat) { el.innerHTML=''; return; }
+  const km = cat.machines.komatsu || [];
+  const jd = cat.machines.john_deere || [];
+
+  el.innerHTML = `
+    <div class="step">
+      <div class="step-label">Komatsu</div>
+      <div class="machine-grid" id="komatsu-grid">
+        ${km.map(m => `
+          <button class="machine-card${selectedKomatsu===m.id?' selected':''}" onclick="selectMachine('komatsu','${m.id}')">
+            <div class="brand-tag komatsu">Komatsu</div>
+            <div class="m-cat">${categoryConfig[activeCategory]?.label||''}</div>
+            <div class="m-model">${m.modelo}</div>
+            <div class="m-meta">${m.motor?.potencia_liquida_hp||m.motor?.potencia_liquida_hp_max||'—'} HP · ${m.peso_operacional_kg?.min ? Math.round(m.peso_operacional_kg.min/1000)+'t' : (m.peso_base_kg ? Math.round(m.peso_base_kg/1000)+'t' : '—')}</div>
+          </button>`).join('')}
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-label">John Deere</div>
+      <div class="machine-grid" id="jd-grid">
+        ${jd.map(m => `
+          <button class="machine-card${selectedJD===m.id?' selected':''}" onclick="selectMachine('jd','${m.id}')">
+            <div class="brand-tag john_deere">John Deere</div>
+            <div class="m-cat">${categoryConfig[activeCategory]?.label||''}</div>
+            <div class="m-model">${m.modelo}</div>
+            <div class="m-meta">${m.motor?.potencia_liquida_hp||m.motor?.potencia_liquida_hp_max||'—'} HP · ${m.peso_operacional_kg?.min ? Math.round(m.peso_operacional_kg.min/1000)+'t' : (m.peso_base_kg ? Math.round(m.peso_base_kg/1000)+'t' : '—')}</div>
+          </button>`).join('')}
+      </div>
+    </div>`;
 }
 
-function selectMachine(id) {
-  const m = machines[id];
-  const side = m.brand === 'komatsu' ? 'komatsu' : 'competitor';
-  selected[side] = (selected[side] === id) ? null : id;
-  updateCompareUI();
+function selectMachine(brand, id) {
+  if (brand === 'komatsu') selectedKomatsu = (selectedKomatsu === id) ? null : id;
+  else selectedJD = (selectedJD === id) ? null : id;
+  renderCompareGrids();
+  document.getElementById('compareBtn').disabled = !(selectedKomatsu && selectedJD);
 }
 
-function updateCompareUI() {
-  document.querySelectorAll('.machine-card').forEach(c => {
-    c.classList.remove('selected','disabled');
-    if (selected.komatsu === c.dataset.id || selected.competitor === c.dataset.id) c.classList.add('selected');
-  });
-  if (selected.komatsu) {
-    const cat = machines[selected.komatsu].category;
-    document.querySelectorAll('#competitor-grid .machine-card').forEach(c => { if (machines[c.dataset.id].category !== cat) c.classList.add('disabled'); });
-  }
-  if (selected.competitor) {
-    const cat = machines[selected.competitor].category;
-    document.querySelectorAll('#komatsu-grid .machine-card').forEach(c => { if (machines[c.dataset.id].category !== cat) c.classList.add('disabled'); });
-  }
-  document.getElementById('compareBtn').disabled = !(selected.komatsu && selected.competitor);
+// ============================= COMPARE RESULT =============================
+function getMachineById(cat, brand, id) {
+  const list = machinesData[cat]?.machines?.[brand] || [];
+  return list.find(m => m.id === id);
 }
 
 function renderCompare() {
-  const km = machines[selected.komatsu], cmp = machines[selected.competitor];
-  const diff = Math.abs(km.weightClass - cmp.weightClass) / km.weightClass;
-  let warn = diff > 0.15 ? `<div class="warning">⚠ Diferença de peso acima de 15%. Comparativo pode não ser equivalente direto.</div>` : '';
-  const layout = specLayout[km.category];
-  const notes = [];
-  let rows = '';
-  layout.forEach(key => {
-    const kv = km.headline[key], cv = cmp.headline[key];
-    if (km.notes && km.notes[key]) notes.push({ text: km.notes[key], model: km.model });
-    if (cmp.notes && cmp.notes[key]) notes.push({ text: cmp.notes[key], model: cmp.model });
-    rows += `<div class="compare-row"><div class="cell label">${specLabels[key]}</div><div class="cell value ${!kv?'empty':''}">${kv||'—'}</div><div class="cell value ${!cv?'empty':''}">${cv||'—'}</div></div>`;
-  });
-  const footnotes = notes.map(n => `<div class="footnote"><span class="footnote-mark">*</span><strong>${n.model}</strong> — ${n.text}</div>`).join('');
-  const proKey = `${selected.komatsu}_${selected.competitor}`;
-  const pros = proKomatsu[proKey] || [];
-  const proHtml = pros.length ? `<div class="pro-block"><div class="pro-title">PRÓ-KOMATSU</div><ul class="pro-list">${pros.map(p=>`<li>${p}</li>`).join('')}</ul></div>` : '';
+  const km = getMachineById(activeCategory, 'komatsu', selectedKomatsu);
+  const jd = getMachineById(activeCategory, 'john_deere', selectedJD);
+  if (!km || !jd) return;
+
+  const rows = buildCompareRows(km, jd, activeCategory);
+  const catLabel = categoryConfig[activeCategory]?.label || '';
 
   document.getElementById('result-content').innerHTML = `
-    ${warn}
     <div class="versus">
-      <div class="versus-side"><div class="brand-tag komatsu">Komatsu</div><div class="m-cat">${km.category}</div><div class="m-model">${km.model}</div></div>
+      <div class="versus-side">
+        <div class="brand-tag komatsu">Komatsu</div>
+        <div class="m-cat">${catLabel}</div>
+        <div class="m-model">${km.modelo}</div>
+      </div>
       <div class="versus-x">VS</div>
-      <div class="versus-side"><div class="brand-tag deere">${cmp.brandLabel}</div><div class="m-cat">${cmp.category}</div><div class="m-model">${cmp.model}</div></div>
+      <div class="versus-side">
+        <div class="brand-tag john_deere">John Deere</div>
+        <div class="m-cat">${catLabel}</div>
+        <div class="m-model">${jd.modelo}</div>
+      </div>
     </div>
     <div class="compare-table">
-      <div class="compare-row hdr"><div class="cell label">Spec</div><div class="cell km">Komatsu</div><div class="cell">${cmp.model.split(' ')[0]}</div></div>
+      <div class="compare-row hdr">
+        <div class="cell label">Spec</div>
+        <div class="cell km">Komatsu</div>
+        <div class="cell">John Deere</div>
+      </div>
       ${rows}
     </div>
-    ${footnotes}${proHtml}
-    <div class="source-note">Dados: prospectos oficiais · Perguntas técnicas → aba Agentes IA</div>`;
+    <div class="source-note">Dados: prospectos oficiais · Dúvidas técnicas → aba Agentes IA</div>`;
 
   document.getElementById('screen-select').classList.remove('active');
   document.getElementById('screen-result').classList.add('active');
-  window.scrollTo(0, 0);
+  window.scrollTo(0,0);
+}
+
+function fmt(val, unit) {
+  if (val === null || val === undefined) return null;
+  if (typeof val === 'object' && val.min !== undefined) {
+    if (val.min === val.max) return val.min + (unit||'');
+    return val.min + '–' + val.max + (unit||'');
+  }
+  return val + (unit||'');
+}
+
+function buildCompareRows(km, jd, cat) {
+  const specs = [];
+
+  if (cat === 'escavadeira') {
+    specs.push(['Peso operacional', fmt(km.peso_operacional_kg,' kg'), fmt(jd.peso_operacional_kg,' kg')]);
+    specs.push(['Potência líquida', km.motor?.potencia_liquida_hp ? km.motor.potencia_liquida_hp+' HP' : '—', jd.motor?.potencia_liquida_hp ? jd.motor.potencia_liquida_hp+' HP' : '—']);
+    specs.push(['Cilindrada', km.motor?.cilindrada_L ? km.motor.cilindrada_L+' L' : '—', jd.motor?.cilindrada_L ? jd.motor.cilindrada_L+' L' : '—']);
+    specs.push(['Capacidade caçamba', fmt(km.capacidade_cacamba_m3,' m³'), fmt(jd.capacidade_cacamba_m3,' m³')]);
+    specs.push(['Força escav. caçamba', km.forca_escavacao_cacamba_kN ? km.forca_escavacao_cacamba_kN+' kN' : '—', jd.forca_escavacao_cacamba_kN ? jd.forca_escavacao_cacamba_kN+' kN' : '—']);
+    specs.push(['Força escav. braço', km.forca_fechamento_braco_kN ? km.forca_fechamento_braco_kN+' kN' : '—', jd.forca_fechamento_braco_kN ? jd.forca_fechamento_braco_kN+' kN' : '—']);
+    specs.push(['Prof. máx. escavação', km.profundidade_max_escavacao_mm ? (km.profundidade_max_escavacao_mm/1000).toFixed(2)+' m' : '—', jd.profundidade_max_escavacao_mm ? (jd.profundidade_max_escavacao_mm/1000).toFixed(2)+' m' : '—']);
+    specs.push(['Alcance máx.', km.alcance_max_escavacao_mm ? (km.alcance_max_escavacao_mm/1000).toFixed(2)+' m' : '—', jd.alcance_max_escavacao_mm ? (jd.alcance_max_escavacao_mm/1000).toFixed(2)+' m' : '—']);
+    specs.push(['Tanque combustível', km.tanque_combustivel_L ? km.tanque_combustivel_L+' L' : '—', jd.tanque_combustivel_L ? jd.tanque_combustivel_L+' L' : '—']);
+    specs.push(['Motor', km.motor?.modelo || '—', jd.motor?.modelo || '—']);
+  } else if (cat === 'carregadeira') {
+    specs.push(['Peso operacional', fmt(km.peso_operacional_kg,' kg'), fmt(jd.peso_operacional_kg,' kg')]);
+    specs.push(['Potência líquida', km.motor?.potencia_liquida_hp ? km.motor.potencia_liquida_hp+' HP' : '—', jd.motor?.potencia_liquida_hp ? jd.motor.potencia_liquida_hp+' HP' : '—']);
+    specs.push(['Cilindrada', km.motor?.cilindrada_L ? km.motor.cilindrada_L+' L' : '—', jd.motor?.cilindrada_L ? jd.motor.cilindrada_L+' L' : '—']);
+    specs.push(['Capacidade caçamba', fmt(km.capacidade_cacamba_m3,' m³'), fmt(jd.capacidade_cacamba_m3,' m³')]);
+    specs.push(['Força arrancamento', km.forca_arrancamento_kN ? km.forca_arrancamento_kN+' kN' : '—', jd.forca_arrancamento_kN ? jd.forca_arrancamento_kN+' kN' : '—']);
+    specs.push(['Altura max. despejo', km.altura_max_despejo_mm ? (km.altura_max_despejo_mm/1000).toFixed(2)+' m' : '—', jd.altura_max_despejo_mm ? (jd.altura_max_despejo_mm/1000).toFixed(2)+' m' : '—']);
+    specs.push(['Vel. máx.', km.velocidade_max_kmh ? km.velocidade_max_kmh+' km/h' : '—', jd.velocidade_max_kmh ? jd.velocidade_max_kmh+' km/h' : '—']);
+    specs.push(['Tanque combustível', km.tanque_combustivel_L ? km.tanque_combustivel_L+' L' : '—', jd.tanque_combustivel_L ? jd.tanque_combustivel_L+' L' : '—']);
+    specs.push(['Motor', km.motor?.modelo || '—', jd.motor?.modelo || '—']);
+  } else if (cat === 'motoniveladora') {
+    specs.push(['Peso base', km.peso_base_kg ? km.peso_base_kg+' kg' : (km.peso_operacional_kg?.min ? km.peso_operacional_kg.min+' kg' : '—'), jd.peso_base_kg ? jd.peso_base_kg+' kg' : '—']);
+    specs.push(['Potência líquida', km.motor?.potencia_liquida_hp ? km.motor.potencia_liquida_hp+' HP' : '—', jd.motor?.potencia_liquida_hp_max ? jd.motor.potencia_liquida_hp_max+' HP' : '—']);
+    specs.push(['Cilindrada', km.motor?.cilindrada_L ? km.motor.cilindrada_L+' L' : '—', jd.motor?.cilindrada_L ? jd.motor.cilindrada_L+' L' : '—']);
+    specs.push(['Tração', km.tracao || '—', jd.tracao || '—']);
+    specs.push(['Comprimento lâmina', km.lamina_mm ? (km.lamina_mm/1000).toFixed(2)+' m' : '—', jd.lamina_m ? jd.lamina_m+' m' : '—']);
+    specs.push(['Tanque combustível', km.tanque_combustivel_L ? km.tanque_combustivel_L+' L' : '—', jd.tanque_combustivel_L ? jd.tanque_combustivel_L+' L' : '—']);
+    specs.push(['Vel. máx.', km.velocidade_max_kmh ? km.velocidade_max_kmh+' km/h' : '—', jd.velocidade_max_kmh ? jd.velocidade_max_kmh+' km/h' : '—']);
+    specs.push(['Motor', km.motor?.modelo || '—', jd.motor?.modelo || '—']);
+  } else if (cat === 'trator_esteira') {
+    specs.push(['Peso operacional', fmt(km.peso_operacional_kg,' kg'), fmt(jd.peso_operacional_kg,' kg')]);
+    specs.push(['Potência líquida', km.motor?.potencia_liquida_hp ? km.motor.potencia_liquida_hp+' HP' : '—', jd.motor?.potencia_liquida_hp ? jd.motor.potencia_liquida_hp+' HP' : '—']);
+    specs.push(['Cilindrada', km.motor?.cilindrada_L ? km.motor.cilindrada_L+' L' : '—', jd.motor?.cilindrada_L ? jd.motor.cilindrada_L+' L' : '—']);
+    specs.push(['Força de tração', km.forca_tracao_kN ? km.forca_tracao_kN+' kN' : '—', jd.forca_tracao_kN ? jd.forca_tracao_kN+' kN' : '—']);
+    specs.push(['Lâmina', km.lamina_mm ? (km.lamina_mm/1000).toFixed(2)+' m' : '—', '—']);
+    specs.push(['Tanque combustível', km.tanque_combustivel_L ? km.tanque_combustivel_L+' L' : '—', jd.tanque_combustivel_L ? jd.tanque_combustivel_L+' L' : '—']);
+    specs.push(['Vel. máx. frente', km.velocidade_max_kmh?.frente ? km.velocidade_max_kmh.frente+' km/h' : '—', jd.velocidade_max_kmh?.frente ? jd.velocidade_max_kmh.frente+' km/h' : '—']);
+    specs.push(['Motor', km.motor?.modelo || '—', jd.motor?.modelo || '—']);
+  }
+
+  return specs.map(([label, kv, jv]) => `
+    <div class="compare-row">
+      <div class="cell label">${label}</div>
+      <div class="cell value${!kv||kv==='—'?' empty':''}">${kv||'—'}</div>
+      <div class="cell value${!jv||jv==='—'?' empty':''}">${jv||'—'}</div>
+    </div>`).join('');
 }
 
 function goBack() {
   document.getElementById('screen-result').classList.remove('active');
   document.getElementById('screen-select').classList.add('active');
-  window.scrollTo(0, 0);
+  window.scrollTo(0,0);
+}
+
+// ============================= TABS =============================
+function switchTab(tab) {
+  document.querySelectorAll('.tab').forEach(t => t.classList.toggle('active', t.dataset.tab===tab));
+  ['screen-select','screen-result','screen-search','screen-agents'].forEach(s => {
+    const el = document.getElementById(s);
+    if(el) el.classList.remove('active');
+  });
+  document.getElementById('chatInputWrap').classList.remove('visible');
+
+  if (tab==='compare') {
+    document.getElementById('screen-select').classList.add('active');
+  } else if (tab==='search') {
+    document.getElementById('screen-search').classList.add('active');
+    setTimeout(()=>document.getElementById('searchInput').focus(),100);
+  } else if (tab==='agents') {
+    if (!agentUnlocked) {
+      document.getElementById('screen-agents').classList.add('active');
+      document.getElementById('passwordOverlay').style.display='flex';
+      setTimeout(()=>document.getElementById('passwordInput').focus(),100);
+    } else {
+      document.getElementById('screen-agents').classList.add('active');
+      if (activeAgent) document.getElementById('chatInputWrap').classList.add('visible');
+    }
+  }
+  window.scrollTo(0,0);
+}
+
+// ============================= SENHA =============================
+function checkAgentPassword() {
+  const input = document.getElementById('passwordInput');
+  const error = document.getElementById('passwordError');
+  if (input.value.trim() === AGENT_PASSWORD) {
+    agentUnlocked = true;
+    document.getElementById('passwordOverlay').style.display='none';
+    document.getElementById('screen-agents').classList.add('active');
+    if (activeAgent) document.getElementById('chatInputWrap').classList.add('visible');
+    input.value=''; error.style.display='none';
+  } else {
+    error.style.display='block'; input.value=''; input.focus();
+  }
 }
 
 // ============================= SEARCH =============================
-function normalize(s) { return String(s||'').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,''); }
-
-function highlightMatch(text, q) {
-  if (!q) return text;
-  const nt = normalize(text), nq = normalize(q), i = nt.indexOf(nq);
-  if (i === -1) return text;
-  return text.substring(0,i) + '<mark>' + text.substring(i,i+q.length) + '</mark>' + text.substring(i+q.length);
+function buildSearchChips() {
+  const el = document.getElementById('searchChips');
+  const chips = ['all', ...Object.keys(machinesData)];
+  el.innerHTML = chips.map(k => {
+    const label = k==='all' ? 'Todas' : (categoryConfig[k]?.label || k);
+    return `<button class="chip${k===searchFilter?' active':''}" onclick="setSearchFilter('${k}')">${label}</button>`;
+  }).join('');
 }
 
-function setFilter(f) {
-  activeFilter = f;
-  document.querySelectorAll('.chip').forEach(c => c.classList.toggle('active', c.dataset.filter === f));
+function setSearchFilter(f) {
+  searchFilter = f;
+  buildSearchChips();
   runSearch(document.getElementById('searchInput').value);
 }
+
+function normalize(s) { return String(s||'').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,''); }
 
 function runSearch(query) {
   const el = document.getElementById('searchResults');
   const clr = document.getElementById('searchClear');
-  if (!query || !query.trim()) {
+  const q = normalize(query.trim());
+
+  if (!q) {
     clr.classList.remove('visible');
-    el.innerHTML = `<div class="empty-state"><div class="empty-icon">🔎</div><strong style="color:var(--text-dim)">Busca livre no prospecto inteiro</strong><br><span style="font-size:11px">Modelo · Seção · Spec · Valor</span><div class="suggest-list"><button class="suggest" onclick="suggestSearch('tanque hidráulico')">tanque hidráulico</button><button class="suggest" onclick="suggestSearch('roletes')">roletes</button><button class="suggest" onclick="suggestSearch('cilindrada')">cilindrada</button><button class="suggest" onclick="suggestSearch('ROPS')">ROPS</button><button class="suggest" onclick="suggestSearch('common rail')">common rail</button><button class="suggest" onclick="suggestSearch('contrapeso')">contrapeso</button><button class="suggest" onclick="suggestSearch('alternador')">alternador</button></div></div>`;
+    el.innerHTML = `<div class="empty-state"><div class="empty-icon">🔎</div><strong style="color:var(--text-dim)">Busca livre na base de dados</strong><br><span style="font-size:11px">Modelo · Spec · Categoria · Valor</span><div class="suggest-list"><button class="suggest" onclick="suggestSearch('SAA6D107')">SAA6D107</button><button class="suggest" onclick="suggestSearch('KOMTRAX')">KOMTRAX</button><button class="suggest" onclick="suggestSearch('hidráulico')">hidráulico</button><button class="suggest" onclick="suggestSearch('PowerTech')">PowerTech</button><button class="suggest" onclick="suggestSearch('4WD')">4WD</button><button class="suggest" onclick="suggestSearch('Stone Handler')">Stone Handler</button></div></div>`;
     return;
   }
   clr.classList.add('visible');
-  const q = normalize(query.trim());
-  const ids = activeFilter === 'all' ? Object.keys(machines) : [activeFilter];
-  const matches = [];
-  ids.forEach(id => {
-    if (!machines[id]) return;
-    const m = machines[id];
-    const sMs = {};
-    Object.keys(m.sections).forEach(sn => {
-      const sec = m.sections[sn], snM = normalize(sn).includes(q), hits = [];
-      Object.keys(sec).forEach(k => { const v = sec[k]; if (normalize(k).includes(q)||normalize(String(v)).includes(q)||snM) hits.push({label:k,value:v}); });
-      if (hits.length) sMs[sn] = hits;
-    });
-    const modelM = normalize(m.model).includes(q);
-    const brandM = normalize(m.brandLabel).includes(q);
-    const catM = normalize(m.category).includes(q);
-    const total = Object.values(sMs).reduce((s,a)=>s+a.length,0);
-    if (modelM||brandM||catM||total) matches.push({id,m,sMs,total});
-  });
-  if (!matches.length) { el.innerHTML = `<div class="empty-state"><div class="empty-icon">∅</div>Nenhum resultado para "<strong style="color:var(--text-dim)">${query}</strong>"</div>`; return; }
-  matches.sort((a,b)=>b.total-a.total);
-  const tot = matches.reduce((s,m)=>s+m.total,0);
-  let html = `<div class="results-count"><span>${tot}</span> ocorrências em <span>${matches.length}</span> máquinas</div>`;
-  matches.forEach(({id,m,sMs,total}) => {
-    let sHtml = '';
-    if (!Object.keys(sMs).length) {
-      const h = Object.keys(m.headline).map(k=>({label:specLabels[k]||k,value:m.headline[k]})).filter(h=>h.value).slice(0,4);
-      sHtml = `<div class="spec-hit-section"><div class="section-tag">Visão Geral</div>${h.map(h=>`<div class="spec-hit"><span class="spec-hit-label">${h.label}</span><span class="spec-hit-value">${h.value}</span></div>`).join('')}</div>`;
-    } else {
-      Object.keys(sMs).forEach(sn => {
-        sHtml += `<div class="spec-hit-section"><div class="section-tag">${highlightMatch(sn,query)}</div>${sMs[sn].map(h=>`<div class="spec-hit"><span class="spec-hit-label">${highlightMatch(String(h.label),query)}</span><span class="spec-hit-value">${highlightMatch(String(h.value),query)}</span></div>`).join('')}</div>`;
+
+  const results = [];
+  const cats = searchFilter==='all' ? Object.keys(machinesData) : [searchFilter];
+
+  cats.forEach(catKey => {
+    const cat = machinesData[catKey];
+    if (!cat) return;
+    const catLabel = categoryConfig[catKey]?.label || catKey;
+    ['komatsu','john_deere'].forEach(brand => {
+      (cat.machines[brand]||[]).forEach(m => {
+        const flat = flattenObj(m);
+        const hits = [];
+        Object.entries(flat).forEach(([k,v]) => {
+          if (normalize(k).includes(q) || normalize(String(v)).includes(q)) {
+            hits.push({label:k, value:String(v)});
+          }
+        });
+        if (hits.length || normalize(m.modelo).includes(q) || normalize(brand).includes(q)) {
+          results.push({catKey, catLabel, brand, m, hits});
+        }
       });
-    }
-    html += `<div class="search-card"><div class="search-card-head"><div class="brand-tag ${m.brand}">${m.brandLabel}</div><div class="m-cat">${m.category}</div><div class="m-model">${highlightMatch(m.model,query)}</div></div>${sHtml}</div>`;
+    });
+  });
+
+  if (!results.length) { el.innerHTML=`<div class="empty-state"><div class="empty-icon">∅</div>Nenhum resultado para "<strong style="color:var(--text-dim)">${query}</strong>"</div>`; return; }
+
+  let html = `<div class="results-count"><span>${results.length}</span> máquinas encontradas</div>`;
+  results.slice(0,20).forEach(({catLabel, brand, m, hits}) => {
+    const brandTag = brand==='komatsu' ? '<span class="brand-tag komatsu">Komatsu</span>' : '<span class="brand-tag john_deere">John Deere</span>';
+    const shownHits = hits.slice(0,5).map(h => `<div class="spec-hit"><span class="spec-hit-label">${h.label}</span><span class="spec-hit-value">${h.value}</span></div>`).join('');
+    html += `<div class="search-card"><div class="search-card-head">${brandTag}<div class="m-cat">${catLabel}</div><div class="m-model">${m.modelo}</div></div>${shownHits||'<div class="m-meta" style="color:var(--text-mute);font-size:11px">Correspondência no nome do modelo</div>'}</div>`;
   });
   el.innerHTML = html;
+}
+
+function flattenObj(obj, prefix='') {
+  const result = {};
+  Object.entries(obj||{}).forEach(([k,v]) => {
+    const key = prefix ? `${prefix}.${k}` : k;
+    if (v && typeof v==='object' && !Array.isArray(v)) {
+      Object.assign(result, flattenObj(v, key));
+    } else if (Array.isArray(v)) {
+      result[key] = v.join(', ');
+    } else {
+      result[key] = v;
+    }
+  });
+  return result;
 }
 
 function clearSearch() { document.getElementById('searchInput').value=''; runSearch(''); document.getElementById('searchInput').focus(); }
 function suggestSearch(t) { document.getElementById('searchInput').value=t; runSearch(t); }
 
 // ============================= AGENTES =============================
-function selectAgent(type) {
-  activeAgent = type;
+function buildAgentsGrid() {
+  const el = document.getElementById('agentsGrid');
+  el.innerHTML = Object.keys(categoryConfig).map(cat => {
+    const cfg = categoryConfig[cat];
+    return `
+      <button class="agent-card ${cfg.color}" id="agent-${cfg.color}" onclick="selectAgent('${cat}')">
+        <div class="agent-icon">${cfg.icon}</div>
+        <div class="agent-name ${cfg.color}">${cfg.label.toUpperCase()}</div>
+        <div class="agent-desc">Consulte qualquer modelo Komatsu ou John Deere desta categoria.</div>
+      </button>`;
+  }).join('');
+}
+
+function selectAgent(catKey) {
+  if (!agentUnlocked) return;
+  activeAgent = catKey;
   chatMessages = [];
-  document.querySelectorAll('.agent-card').forEach(c => c.classList.remove('active'));
-  document.getElementById(`agent-${type}`).classList.add('active');
+  agentSelectedModels = { komatsu: null, jd: null };
+
+  const cfg = categoryConfig[catKey];
+  document.querySelectorAll('.agent-card').forEach(c=>c.classList.remove('active'));
+  document.getElementById(`agent-${cfg.color}`).classList.add('active');
 
   const bar = document.getElementById('agentBar');
   bar.classList.add('visible');
-  document.getElementById('agentDot').className = `agent-dot ${type}`;
+  document.getElementById('agentDot').className = `agent-dot ${cfg.color}`;
   const nameEl = document.getElementById('agentName');
-  nameEl.className = `agent-active-name ${type}`;
-  nameEl.textContent = agentConfig[type].name;
+  nameEl.className = `agent-active-name ${cfg.color}`;
+  nameEl.textContent = `AGENTE ${cfg.label.toUpperCase()}`;
 
-  document.getElementById('agentWelcome').style.display = 'none';
-  document.getElementById('chatHistory').innerHTML = '';
+  document.getElementById('agentWelcome').style.display='none';
+  document.getElementById('chatHistory').innerHTML='';
+
+  // Model selectors
+  renderAgentModelSelectors(catKey);
 
   const qb = document.getElementById('quickBlock');
   const ql = document.getElementById('quickList');
-  qb.style.display = 'block';
-  ql.innerHTML = agentConfig[type].quickQ
-    .map(q => `<button class="quick-q" onclick="useQuickQ('${q.replace(/'/g,"\\'")}')">💬 ${q}</button>`)
-    .join('');
+  qb.style.display='block';
+  const qs = agentQuickQ[cfg.agentType] || [];
+  ql.innerHTML = qs.map(q=>`<button class="quick-q" onclick="useQuickQ('${q.replace(/'/g,"\\'")}')">💬 ${q}</button>`).join('');
 
   document.getElementById('chatInputWrap').classList.add('visible');
   document.getElementById('chatTextarea').focus();
 }
 
-function useQuickQ(q) {
-  document.getElementById('chatTextarea').value = q;
-  sendMessage();
+function renderAgentModelSelectors(catKey) {
+  const el = document.getElementById('agentModelSelectors');
+  const cat = machinesData[catKey];
+  if (!cat) { el.style.display='none'; return; }
+  const km = cat.machines.komatsu || [];
+  const jd = cat.machines.john_deere || [];
+
+  // default: first of each
+  if (!agentSelectedModels.komatsu && km.length) agentSelectedModels.komatsu = km[0].id;
+  if (!agentSelectedModels.jd && jd.length) agentSelectedModels.jd = jd[0].id;
+
+  el.style.display='block';
+  el.innerHTML = `
+    <div class="model-selector">
+      <div class="model-selector-label">Komatsu — modelo consultado</div>
+      <div class="model-pills">
+        ${km.map(m=>`<button class="model-pill${agentSelectedModels.komatsu===m.id?' active':''}" onclick="setAgentModel('komatsu','${m.id}','${catKey}')">${m.modelo}</button>`).join('')}
+      </div>
+    </div>
+    <div class="model-selector" style="margin-bottom:14px">
+      <div class="model-selector-label">John Deere — modelo consultado</div>
+      <div class="model-pills">
+        ${jd.map(m=>`<button class="model-pill${agentSelectedModels.jd===m.id?' active':''}" onclick="setAgentModel('jd','${m.id}','${catKey}')">${m.modelo}</button>`).join('')}
+      </div>
+    </div>`;
 }
 
-function buildSystemPrompt(type) {
-  const cfg = agentConfig[type];
-  const agentMachines = {};
-  cfg.machines.forEach(id => { agentMachines[id] = machines[id]; });
+function setAgentModel(brand, id, catKey) {
+  agentSelectedModels[brand] = id;
+  renderAgentModelSelectors(catKey);
+}
 
-  return `Você é um especialista técnico em ${type === 'exc' ? 'escavadeiras hidráulicas' : 'pás carregadeiras de rodas'}, apoiando um consultor de vendas Komatsu em negociação.
+function buildSystemPrompt(catKey) {
+  const cfg = categoryConfig[catKey];
+  const cat = machinesData[catKey];
+  const kmId = agentSelectedModels.komatsu;
+  const jdId = agentSelectedModels.jd;
+  const kmMachine = (cat?.machines?.komatsu||[]).find(m=>m.id===kmId);
+  const jdMachine = (cat?.machines?.john_deere||[]).find(m=>m.id===jdId);
 
-MÁQUINAS DA SUA BASE:
-${cfg.machines.map(id => `- ${machines[id].brandLabel} ${machines[id].model}`).join('\n')}
+  return `Você é um especialista técnico em ${cfg.label}, apoiando um consultor de vendas Komatsu em negociação.
 
-DADOS COMPLETOS DOS PROSPECTOS:
-${JSON.stringify(agentMachines, null, 2)}
+MODELOS SELECIONADOS:
+- Komatsu: ${kmMachine?.modelo || 'não selecionado'}
+- John Deere: ${jdMachine?.modelo || 'não selecionado'}
+
+DADOS KOMATSU (${kmMachine?.modelo||''}):
+${JSON.stringify(kmMachine, null, 2)}
+
+DADOS JOHN DEERE (${jdMachine?.modelo||''}):
+${JSON.stringify(jdMachine, null, 2)}
 
 REGRAS:
 - Responda SEMPRE em português brasileiro
 - Seja DIRETO e CONCISO — o consultor está na frente do cliente
-- Use dados desta base primeiro. Se não encontrar, informe que não consta no prospecto e ofereça o que sabe
+- Use os dados acima primeiro. Se não encontrar, informe que não consta no prospecto
 - Destaque diferenças que favorecem a Komatsu quando relevante
 - Máximo 5 linhas de resposta
 - Use **negrito** para números e diferenciais chave
-- Sem introdução, sem conclusão longa`;
+- Sem introdução longa, sem conclusão redundante`;
+}
+
+function useQuickQ(q) {
+  document.getElementById('chatTextarea').value=q;
+  sendMessage();
 }
 
 async function sendMessage() {
@@ -867,70 +934,62 @@ async function sendMessage() {
   const msg = ta.value.trim();
   if (!msg) return;
 
-  ta.value = '';
-  ta.style.height = 'auto';
-  isLoading = true;
-  document.getElementById('chatSend').disabled = true;
-  document.getElementById('quickBlock').style.display = 'none';
+  ta.value=''; ta.style.height='auto';
+  isLoading=true;
+  document.getElementById('chatSend').disabled=true;
+  document.getElementById('quickBlock').style.display='none';
 
-  chatMessages.push({ role: 'user', content: msg });
+  chatMessages.push({role:'user', content:msg});
   renderChat();
 
-  // Typing indicator
   const hist = document.getElementById('chatHistory');
+  const cfg = categoryConfig[activeAgent];
   const typingEl = document.createElement('div');
-  typingEl.className = `bubble agent ${activeAgent}`;
-  typingEl.innerHTML = `<div class="agent-label ${activeAgent}">${agentConfig[activeAgent].name}</div><div class="typing"><div class="dot"></div><div class="dot"></div><div class="dot"></div></div>`;
+  typingEl.className=`bubble agent ${cfg.color}`;
+  typingEl.innerHTML=`<div class="agent-label ${cfg.color}">AGENTE ${cfg.label.toUpperCase()}</div><div class="typing"><div class="dot"></div><div class="dot"></div><div class="dot"></div></div>`;
   hist.appendChild(typingEl);
-  hist.scrollTop = hist.scrollHeight;
+  hist.scrollTop=hist.scrollHeight;
 
   try {
-    // Chama o backend Netlify Function (não expõe a chave)
     const res = await fetch('/.netlify/functions/agent', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        systemPrompt: buildSystemPrompt(activeAgent),
-        messages: chatMessages
-      })
+      method:'POST',
+      headers:{'Content-Type':'application/json'},
+      body: JSON.stringify({systemPrompt: buildSystemPrompt(activeAgent), messages: chatMessages})
     });
-
     const data = await res.json();
     const reply = data.reply || data.error || 'Erro ao processar resposta.';
-
-    chatMessages.push({ role: 'assistant', content: reply });
+    chatMessages.push({role:'assistant', content:reply});
     typingEl.remove();
     renderChat();
-
-  } catch (err) {
+  } catch(err) {
     typingEl.remove();
-    chatMessages.push({ role: 'assistant', content: '⚠ Erro de conexão. Tente novamente.' });
+    chatMessages.push({role:'assistant', content:'⚠ Erro de conexão. Tente novamente.'});
     renderChat();
   }
 
-  isLoading = false;
-  document.getElementById('chatSend').disabled = false;
+  isLoading=false;
+  document.getElementById('chatSend').disabled=false;
   document.getElementById('chatTextarea').focus();
 }
 
 function renderChat() {
   const hist = document.getElementById('chatHistory');
-  hist.innerHTML = '';
+  const cfg = categoryConfig[activeAgent];
+  hist.innerHTML='';
   chatMessages.forEach(m => {
     const el = document.createElement('div');
-    if (m.role === 'user') {
-      el.className = 'bubble user';
-      el.textContent = m.content;
+    if (m.role==='user') {
+      el.className='bubble user';
+      el.textContent=m.content;
     } else {
-      el.className = `bubble agent ${activeAgent}`;
-      el.innerHTML = `<div class="agent-label ${activeAgent}">${agentConfig[activeAgent].name}</div>${m.content.replace(/\*\*(.*?)\*\*/g,'<strong>$1</strong>').replace(/\n/g,'<br>')}`;
+      el.className=`bubble agent ${cfg.color}`;
+      el.innerHTML=`<div class="agent-label ${cfg.color}">AGENTE ${cfg.label.toUpperCase()}</div>${m.content.replace(/\*\*(.*?)\*\*/g,'<strong>$1</strong>').replace(/\n/g,'<br>')}`;
     }
     hist.appendChild(el);
   });
-  hist.scrollTop = hist.scrollHeight;
+  hist.scrollTop=hist.scrollHeight;
 }
 
-// Inicia o app
 init();
 </script>
 
