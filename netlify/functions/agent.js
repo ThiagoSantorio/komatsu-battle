@@ -88,17 +88,34 @@ const PROSPECTS = {
   }
 };
 
-function fetchPdfAsBase64(url) {
+// Extrai texto legível de um PDF via Anthropic (envia a URL, não o binário)
+// Usa a API com document type url quando disponível, senão faz fetch do texto bruto
+function fetchPdfText(url) {
   return new Promise((resolve) => {
     const client = url.startsWith('https') ? https : http;
     const req = client.get(url, (res) => {
       if (res.statusCode !== 200) { resolve(null); return; }
       const chunks = [];
       res.on('data', chunk => chunks.push(chunk));
-      res.on('end', () => resolve(Buffer.concat(chunks).toString('base64')));
+      res.on('end', () => {
+        try {
+          // Extrai texto bruto do PDF (bytes → string, pega só partes legíveis)
+          const buf = Buffer.concat(chunks);
+          const raw = buf.toString('latin1');
+          // Extrai strings legíveis (sequências de caracteres imprimíveis com 4+ chars)
+          const readable = raw.match(/[\x20-\x7E\xC0-\xFF]{4,}/g) || [];
+          const text = readable
+            .join(' ')
+            .replace(/\s+/g, ' ')
+            .substring(0, 15000); // limita a 15k chars para não estourar contexto
+          resolve(text || null);
+        } catch(e) {
+          resolve(null);
+        }
+      });
     });
     req.on('error', () => resolve(null));
-    req.setTimeout(8000, () => { req.destroy(); resolve(null); });
+    req.setTimeout(10000, () => { req.destroy(); resolve(null); });
   });
 }
 
@@ -113,8 +130,7 @@ function callAnthropic(payload, apiKey) {
         'Content-Type': 'application/json',
         'Content-Length': Buffer.byteLength(body),
         'x-api-key': apiKey,
-        'anthropic-version': '2023-06-01',
-        'anthropic-beta': 'pdfs-2024-09-25'
+        'anthropic-version': '2023-06-01'
       }
     };
     const req = https.request(options, (res) => {
@@ -151,65 +167,67 @@ exports.handler = async (event) => {
 
     console.log('CATEGORY:', category, 'MODELS:', JSON.stringify(selectedModels));
 
-    // ── Busca PDFs no R2 ──
-    const pdfContents = [];
+    // ── Busca texto dos PDFs no R2 em paralelo ──
+    const pdfTexts = [];
     if (selectedModels && category) {
-      const tasks = [
-        { brand: 'komatsu', key: 'komatsu', id: selectedModels.komatsu },
-        { brand: 'john_deere', key: 'john_deere', id: selectedModels.jd }
-      ];
-      await Promise.all(tasks.map(async ({ brand, key, id }) => {
-        if (!id) return;
-        const url = PROSPECTS[key]?.[category]?.[id];
-        if (!url) return;
-        console.log(`Fetching ${brand} PDF:`, url);
-        const b64 = await fetchPdfAsBase64(url);
-        if (b64) {
-          pdfContents.push({ brand, id, b64 });
-          console.log(`${brand} PDF OK, size:`, b64.length);
-        } else {
-          console.log(`${brand} PDF failed`);
-        }
-      }));
+      await Promise.all([
+        (async () => {
+          if (!selectedModels.komatsu) return;
+          const url = PROSPECTS.komatsu?.[category]?.[selectedModels.komatsu];
+          if (!url) return;
+          console.log('Fetching Komatsu text:', url);
+          const text = await fetchPdfText(url);
+          if (text) {
+            pdfTexts.push({ brand: 'Komatsu', id: selectedModels.komatsu, text });
+            console.log('Komatsu text OK, length:', text.length);
+          }
+        })(),
+        (async () => {
+          if (!selectedModels.jd) return;
+          const url = PROSPECTS.john_deere?.[category]?.[selectedModels.jd];
+          if (!url) return;
+          console.log('Fetching JD text:', url);
+          const text = await fetchPdfText(url);
+          if (text) {
+            pdfTexts.push({ brand: 'John Deere', id: selectedModels.jd, text });
+            console.log('JD text OK, length:', text.length);
+          }
+        })()
+      ]);
     }
 
-    // ── Monta mensagem com PDFs embutidos ──
-    const lastMsg = messages[messages.length - 1];
-    const prevMessages = messages.slice(0, -1);
-    const userText = typeof lastMsg.content === 'string' ? lastMsg.content : JSON.stringify(lastMsg.content);
+    // ── Monta system prompt enriquecido com texto dos PDFs ──
+    let enrichedSystem = systemPrompt;
+    if (pdfTexts.length > 0) {
+      const pdfContext = pdfTexts.map(p =>
+        `\n\n=== PROSPECTO TÉCNICO: ${p.brand} ${p.id} ===\n${p.text}`
+      ).join('\n');
+      enrichedSystem = systemPrompt + '\n\nCONTEÚDO DOS PROSPECTOS OFICIAIS (fonte primária):' + pdfContext;
+      console.log('System prompt size:', enrichedSystem.length);
+    }
 
-    const userContent = pdfContents.length > 0
-      ? [
-          ...pdfContents.map(p => ({
-            type: 'document',
-            source: { type: 'base64', media_type: 'application/pdf', data: p.b64 },
-            title: `Prospecto ${p.brand} - ${p.id}`,
-            context: `Prospecto técnico oficial. Use como fonte primária para responder.`
-          })),
-          { type: 'text', text: userText }
-        ]
-      : userText;
-
-    const finalMessages = [...prevMessages, { role: 'user', content: userContent }];
-
-    // ── Chama Claude com PDFs + web_search disponível ──
+    // ── Chama Claude com web_search disponível como fallback ──
     const result = await callAnthropic({
       model: 'claude-sonnet-4-6',
       max_tokens: 1024,
-      system: systemPrompt,
+      system: enrichedSystem,
       tools: [{ type: 'web_search_20250305', name: 'web_search', max_uses: 2 }],
-      messages: finalMessages
+      messages
     }, apiKey);
 
     if (result.status !== 200) {
-      return { statusCode: result.status, headers: corsHeaders, body: JSON.stringify({ error: result.body.error?.message || JSON.stringify(result.body) }) };
+      return {
+        statusCode: result.status,
+        headers: corsHeaders,
+        body: JSON.stringify({ error: result.body.error?.message || JSON.stringify(result.body) })
+      };
     }
 
     const firstContent = result.body.content || [];
     const stopReason = result.body.stop_reason;
-    console.log('STOP REASON:', stopReason);
+    console.log('STOP REASON:', stopReason, 'BLOCKS:', firstContent.map(b => b.type).join(','));
 
-    // Se fez web_search, continua o loop
+    // Se usou web_search, continua o loop
     if (stopReason === 'tool_use') {
       const toolUseBlocks = firstContent.filter(b => b.type === 'tool_use');
       const toolResults = toolUseBlocks.map(tb => ({
@@ -221,17 +239,21 @@ exports.handler = async (event) => {
       const second = await callAnthropic({
         model: 'claude-sonnet-4-6',
         max_tokens: 1024,
-        system: systemPrompt,
+        system: enrichedSystem,
         tools: [{ type: 'web_search_20250305', name: 'web_search', max_uses: 2 }],
         messages: [
-          ...finalMessages,
+          ...messages,
           { role: 'assistant', content: firstContent },
           { role: 'user', content: toolResults }
         ]
       }, apiKey);
 
       if (second.status !== 200) {
-        return { statusCode: second.status, headers: corsHeaders, body: JSON.stringify({ error: second.body.error?.message }) };
+        return {
+          statusCode: second.status,
+          headers: corsHeaders,
+          body: JSON.stringify({ error: second.body.error?.message })
+        };
       }
 
       const reply = extractText(second.body.content);
@@ -239,7 +261,9 @@ exports.handler = async (event) => {
     }
 
     const reply = extractText(firstContent);
-    return { statusCode: 200, headers: corsHeaders, body: JSON.stringify({ reply, source: pdfContents.length > 0 ? 'prospecto' : 'dados' }) };
+    const source = pdfTexts.length > 0 ? 'prospecto' : 'dados';
+    console.log('REPLY LENGTH:', reply.length, 'SOURCE:', source);
+    return { statusCode: 200, headers: corsHeaders, body: JSON.stringify({ reply, source }) };
 
   } catch (err) {
     console.log('ERROR:', err.message);
