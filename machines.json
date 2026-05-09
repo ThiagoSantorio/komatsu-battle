@@ -1,499 +1,1292 @@
 {
-  "pc130lc": {
-    "brand": "komatsu",
-    "brandLabel": "Komatsu",
-    "category": "Escavadeira",
-    "model": "PC130LC-10M0",
-    "weightClass": 13500,
-    "meta": "13,9 t · 97 HP",
-    "headline": {
-      "peso": "13.070–13.940 kg",
-      "potencia": "97,3 HP / 70 kW",
-      "cacamba": "0,60–0,75 m³",
-      "forca_cacamba": "93,4 kN (ISO)",
-      "forca_braco": "67,5 kN (ISO)",
-      "tanque": "255 L",
-      "vel_max": "5,5 km/h",
-      "tracao": "12.500 kgf",
-      "vel_giro": "11,0 rpm"
-    },
-    "sections": {
-      "Motor": {
-        "Modelo": "Komatsu SAA4D95LE-5",
-        "Tipo": "4 tempos, arrefecido à água, injeção direta",
-        "Aspiração": "Turboalimentado, com pós-resfriador",
-        "Cilindros": "4",
-        "Diâmetro": "95 mm",
-        "Curso": "115 mm",
-        "Cilindrada": "3,26 L",
-        "Potência bruta (SAE J1995)": "97,3 HP",
-        "Potência líquida (ISO 9249)": "93,4 HP",
-        "Rotação nominal": "2.200 rpm",
-        "Governador": "Eletrônico",
-        "Padrão de emissão": "PROCONVE-MAR1"
-      },
-      "Sistema Hidráulico": {
-        "Tipo": "HydrauMind centro fechado com válvulas sensoras de carga",
-        "Modos de trabalho": "6",
-        "Bomba principal": "Pistão de deslocamento variável",
-        "Vazão máxima": "242 L/min",
-        "Alívio implementos": "31,9 MPa (325 kgf/cm²)",
-        "Alívio deslocamento": "34,8 MPa (355 kgf/cm²)",
-        "Alívio giro": "27,1 MPa (276 kgf/cm²)",
-        "Alívio piloto": "3,2 MPa (33 kgf/cm²)",
-        "Cilindro lança": "2 un. — 105 mm × 995 mm × 70 mm",
-        "Cilindro braço": "1 un. — 115 mm × 1175 mm × 75 mm",
-        "Cilindro caçamba": "1 un. — 95 mm × 885 mm × 65 mm"
-      },
-      "Comandos e Freios": {
-        "Controle direcional": "Duas alavancas com pedais",
-        "Transmissão": "Hidrostático",
-        "Força tração": "12.500 kgf (123 kN)",
-        "Inclinação máxima": "70% / 35°",
-        "Vel. alta": "5,5 km/h",
-        "Vel. baixa": "2,9 km/h",
-        "Freio serviço": "Trava hidráulica",
-        "Freio estacionamento": "Disco mecânico"
-      },
-      "Sistema de Giro": {
-        "Acionamento": "Hidrostático",
-        "Redução": "Engrenagem planetária",
-        "Lubrificação": "Banho de graxa",
-        "Velocidade giro": "11,0 rpm"
-      },
-      "Material Rodante": {
-        "Armação central": "Estrutura em X",
-        "Vedação": "Esteiras seladas",
-        "Ajuste tensão": "Hidráulico",
-        "Sapatas PC130-10M0 (cada lado)": "43",
-        "Roletes superiores PC130-10M0": "1",
-        "Roletes inferiores PC130-10M0": "7",
-        "Sapatas PC130LC-10M0 (cada lado)": "46",
-        "Roletes superiores PC130LC-10M0": "2",
-        "Roletes inferiores PC130LC-10M0": "8"
-      },
-      "Capacidades de Reabastecimento": {
-        "Reservatório combustível": "255 L",
-        "Líquido arrefecimento": "10,2 L",
-        "Óleo do motor": "12,5 L",
-        "Comando final (cada lado)": "2 × 2,1 L",
-        "Comando giro": "2,5 L",
-        "Reservatório hidráulico": "90 L"
-      },
-      "Pesos Operacionais": {
-        "PC130-10M0 sapata 500 mm": "13.070 kg",
-        "PC130-10M0 sapata 600 mm": "13.250 kg",
-        "PC130-10M0 sapata 700 mm": "13.430 kg",
-        "PC130LC-10M0 sapata 600 mm": "13.750 kg",
-        "PC130LC-10M0 sapata 700 mm": "13.940 kg"
-      },
-      "Faixa de Trabalho braço 2500mm": {
-        "Altura máx. escavação": "8.650 mm",
-        "Altura máx. despejo": "6.210 mm",
-        "Prof. máx. escavação": "5.520 mm",
-        "Prof. parede vertical": "4.980 mm",
-        "Alcance máx.": "8.290 mm",
-        "Raio giro mínimo": "2.450 mm",
-        "Força escavação caçamba ISO": "93,4 kN / 9.520 kgf",
-        "Força fechamento braço ISO": "67,5 kN / 6.880 kgf"
-      },
-      "Faixa de Trabalho braço 3000mm": {
-        "Altura máx. escavação": "8.930 mm",
-        "Altura máx. despejo": "6.615 mm",
-        "Prof. máx. escavação": "5.955 mm",
-        "Alcance máx.": "8.720 mm",
-        "Força escavação caçamba ISO": "93,4 kN / 9.520 kgf",
-        "Força fechamento braço ISO": "59,3 kN / 6.050 kgf"
-      },
-      "Dimensões": {
-        "Comprimento total braço 2500mm": "7.650 mm (LC) / 7.545 mm",
-        "Largura total": "2.500 mm",
-        "Altura cabine": "2.855 mm",
-        "Raio de giro traseiro": "2.250 mm",
-        "Bitola esteira": "1.990 mm",
-        "Largura ext. esteiras": "2.590 mm",
-        "Distância centro–extremidade traseira": "2.170 mm"
-      },
-      "Caçambas": {
-        "PC130-10M0": "0,60 m³ — 1.125 mm — 475 kg — 5 dentes",
-        "PC130LC-10M0 0,60": "0,60 m³ — 1.125 mm — 490 kg — 5 dentes",
-        "PC130LC-10M0 0,75": "0,75 m³ — 1.205 mm — 530 kg — 5 dentes"
-      },
-      "Eficiência e Tecnologia": {
-        "Redução consumo": "Até 16% vs PC130-8",
-        "Ganho potência motor": "3% superior (70 kW vs 68 kW)",
-        "Ampliação tempo trabalho": "22% mais que modelo anterior",
-        "Boost potência": "Função +9% força escavação por 8,5s",
-        "Resfriador de óleo": "37% maior — núcleo 17,8 m²",
-        "Modos operação": "P, E0, E1, E2, E3, L, B, ATT/P, ATT/E",
-        "Telemetria": "KOMTRAX via satélite padrão"
-      },
-      "Segurança e Cabine": {
-        "Cabine": "ROPS ISO 12117-2 e OPG nível 1 ISO 10262",
-        "Câmera": "Visão traseira padrão",
-        "Assento": "Suspensão com ajuste de peso",
-        "Cabine pressurizada": "Sim",
-        "Ar condicionado": "Automático",
-        "Idiomas monitor": "15 idiomas"
-      }
+  "escavadeira": {
+    "label": "Escavadeira",
+    "machines": {
+      "komatsu": [
+        {
+          "id": "pc130lc",
+          "modelo": "PC130LC-10M0",
+          "marca": "Komatsu",
+          "motor": {
+            "modelo": "Komatsu SAA4D95LE-5",
+            "cilindros": 4,
+            "cilindrada_L": 3.26,
+            "potencia_bruta_hp": 97.3,
+            "potencia_liquida_hp": 93.4,
+            "potencia_liquida_kw": 69.6,
+            "rpm_nominal": 2200,
+            "emissao": "PROCONVE MAR-1"
+          },
+          "peso_operacional_kg": { "min": 13070, "max": 13940 },
+          "capacidade_cacamba_m3": { "min": 0.60, "max": 0.75 },
+          "tanque_combustivel_L": 255,
+          "reservatorio_hidraulico_L": 90,
+          "velocidade_deslocamento_kmh": { "alta": 5.5, "baixa": 2.9 },
+          "forca_escavacao_cacamba_kN": 93.4,
+          "forca_fechamento_braco_kN": 67.5,
+          "vazao_bomba_Lmin": 242,
+          "profundidade_max_escavacao_mm": 5955,
+          "altura_max_escavacao_mm": 8930,
+          "alcance_max_escavacao_mm": 8720,
+          "raio_giro_traseiro_mm": 2250,
+          "sapatas_mm": [500, 600, 700],
+          "roletes_inferiores": 7,
+          "roletes_superiores": 1,
+          "sapatas_por_lado": 43,
+          "sistema_komtrax": true
+        },
+        {
+          "id": "pc160lc",
+          "modelo": "PC160LC-8",
+          "marca": "Komatsu",
+          "motor": {
+            "modelo": "Komatsu SAA4D107E-1",
+            "cilindros": 4,
+            "cilindrada_L": 4.46,
+            "potencia_bruta_hp": 121,
+            "potencia_bruta_kw": 90,
+            "potencia_liquida_hp": 115,
+            "potencia_liquida_kw": 86,
+            "rpm_nominal": 2200,
+            "emissao": "PROCONVE MAR-1"
+          },
+          "peso_operacional_kg": { "min": 17400, "max": 17570 },
+          "capacidade_cacamba_m3": { "min": 0.80, "max": 1.05 },
+          "tanque_combustivel_L": 280,
+          "reservatorio_hidraulico_L": 121,
+          "velocidade_deslocamento_kmh": { "alta": 5.5, "baixa": 3.4 },
+          "forca_escavacao_cacamba_kN": 123,
+          "forca_fechamento_braco_kN": 95.1,
+          "vazao_bomba_Lmin": 312,
+          "profundidade_max_escavacao_mm": 6250,
+          "altura_max_escavacao_mm": 9130,
+          "alcance_max_escavacao_mm": 9235,
+          "raio_giro_traseiro_mm": 2435,
+          "sapatas_mm": [700],
+          "roletes_inferiores": 7,
+          "roletes_superiores": 2,
+          "sapatas_por_lado": 44,
+          "sistema_komtrax": true
+        },
+        {
+          "id": "pc200",
+          "modelo": "PC200-10M0",
+          "marca": "Komatsu",
+          "motor": {
+            "modelo": "Komatsu SAA4D107E-1",
+            "cilindros": 4,
+            "cilindrada_L": 4.46,
+            "potencia_bruta_hp": 148,
+            "potencia_liquida_hp": 138,
+            "rpm_nominal": 2000,
+            "emissao": "PROCONVE MAR-1"
+          },
+          "peso_operacional_kg": { "min": 20400, "max": 20400 },
+          "capacidade_cacamba_m3": { "min": 1.00, "max": 1.00 },
+          "tanque_combustivel_L": 400,
+          "reservatorio_hidraulico_L": 135,
+          "velocidade_deslocamento_kmh": { "alta": 4.9, "media": 4.1, "baixa": 3.0 },
+          "forca_escavacao_cacamba_kN": 149,
+          "forca_fechamento_braco_kN": 127,
+          "vazao_bomba_Lmin": 439,
+          "profundidade_max_escavacao_mm": 6010,
+          "altura_max_escavacao_mm": 9770,
+          "alcance_max_escavacao_mm": 9385,
+          "raio_giro_traseiro_mm": 2835,
+          "sapatas_mm": [600],
+          "roletes_inferiores": 7,
+          "roletes_superiores": 2,
+          "sapatas_por_lado": 45,
+          "sistema_komtrax": true
+        },
+        {
+          "id": "pc210",
+          "modelo": "PC210-10M0",
+          "marca": "Komatsu",
+          "motor": {
+            "modelo": "Komatsu SAA6D107E-1",
+            "cilindros": 6,
+            "cilindrada_L": 6.69,
+            "potencia_liquida_hp": 165,
+            "rpm_nominal": 2000,
+            "emissao": "PROCONVE MAR-1"
+          },
+          "peso_operacional_kg": { "min": 21050, "max": 21650 },
+          "capacidade_cacamba_m3": { "min": 1.20, "max": 1.50 },
+          "tanque_combustivel_L": 400,
+          "reservatorio_hidraulico_L": 135,
+          "velocidade_deslocamento_kmh": { "alta": 5.5, "media": 4.6, "baixa": 3.0 },
+          "forca_escavacao_cacamba_kN": 167,
+          "forca_fechamento_braco_kN": 128,
+          "vazao_bomba_Lmin": 439,
+          "profundidade_max_escavacao_mm": 6010,
+          "altura_max_escavacao_mm": 9790,
+          "alcance_max_escavacao_mm": 9640,
+          "raio_giro_traseiro_mm": 2900,
+          "sapatas_mm": [600, 700, 800],
+          "roletes_inferiores": 7,
+          "roletes_superiores": 2,
+          "sapatas_por_lado": 45,
+          "sistema_komtrax": true
+        },
+        {
+          "id": "pc210lc",
+          "modelo": "PC210LC-10M0",
+          "marca": "Komatsu",
+          "motor": {
+            "modelo": "Komatsu SAA6D107E-1",
+            "cilindros": 6,
+            "cilindrada_L": 6.69,
+            "potencia_liquida_hp": 165,
+            "rpm_nominal": 2000,
+            "emissao": "PROCONVE MAR-1"
+          },
+          "peso_operacional_kg": { "min": 22050, "max": 22850 },
+          "capacidade_cacamba_m3": { "min": 1.20, "max": 1.50 },
+          "tanque_combustivel_L": 400,
+          "reservatorio_hidraulico_L": 135,
+          "velocidade_deslocamento_kmh": { "alta": 5.5, "media": 4.6, "baixa": 3.0 },
+          "forca_escavacao_cacamba_kN": 167,
+          "forca_fechamento_braco_kN": 128,
+          "vazao_bomba_Lmin": 439,
+          "profundidade_max_escavacao_mm": 6510,
+          "altura_max_escavacao_mm": 10030,
+          "alcance_max_escavacao_mm": 9980,
+          "raio_giro_traseiro_mm": 2900,
+          "sapatas_mm": [600, 700, 800],
+          "roletes_inferiores": 9,
+          "roletes_superiores": 2,
+          "sapatas_por_lado": 49,
+          "sistema_komtrax": true
+        },
+        {
+          "id": "pc240lc",
+          "modelo": "PC240LC-8",
+          "marca": "Komatsu",
+          "motor": {
+            "modelo": "Komatsu SAA6D107E-1",
+            "cilindros": 6,
+            "cilindrada_L": 6.69,
+            "potencia_bruta_hp": 180,
+            "potencia_bruta_kw": 134,
+            "potencia_liquida_hp": 168,
+            "potencia_liquida_kw": 125,
+            "rpm_nominal": 2000,
+            "emissao": "EPA Tier 3"
+          },
+          "peso_operacional_kg": { "min": 24850, "max": 25400 },
+          "capacidade_cacamba_m3": { "min": 0.72, "max": 1.73 },
+          "tanque_combustivel_L": 400,
+          "reservatorio_hidraulico_L": 135,
+          "velocidade_deslocamento_kmh": { "alta": 5.5, "media": 4.2, "baixa": 3.1 },
+          "forca_escavacao_cacamba_kN": 197,
+          "forca_fechamento_braco_kN": 161,
+          "vazao_bomba_Lmin": 439,
+          "profundidade_max_escavacao_mm": 6915,
+          "altura_max_escavacao_mm": 10060,
+          "alcance_max_escavacao_mm": 10180,
+          "raio_giro_traseiro_mm": 2940,
+          "sapatas_mm": [600, 700, 800],
+          "roletes_inferiores": 10,
+          "roletes_superiores": 2,
+          "sapatas_por_lado": 51,
+          "sistema_komtrax": true
+        },
+        {
+          "id": "pc360lc",
+          "modelo": "PC360LC-8M2",
+          "marca": "Komatsu",
+          "motor": {
+            "modelo": "Komatsu SAA6D114E-3",
+            "cilindros": 6,
+            "cilindrada_L": 8.27,
+            "potencia_bruta_hp": 286,
+            "potencia_bruta_kw": 213,
+            "potencia_liquida_hp": 271,
+            "potencia_liquida_kw": 202,
+            "rpm_nominal": 1950,
+            "emissao": "PROCONVE MAR-1"
+          },
+          "peso_operacional_kg": { "min": 35200, "max": 35200 },
+          "capacidade_cacamba_m3": { "min": 2.23, "max": 2.23 },
+          "tanque_combustivel_L": 605,
+          "reservatorio_hidraulico_L": 188,
+          "velocidade_deslocamento_kmh": { "alta": 5.5, "media": 4.5, "baixa": 3.2 },
+          "forca_escavacao_cacamba_kN": 271,
+          "forca_fechamento_braco_kN": 207,
+          "vazao_bomba_Lmin": 535,
+          "profundidade_max_escavacao_mm": 6710,
+          "altura_max_escavacao_mm": 10025,
+          "alcance_max_escavacao_mm": 10535,
+          "raio_giro_traseiro_mm": 3555,
+          "sapatas_mm": [600],
+          "roletes_inferiores": 8,
+          "roletes_superiores": 2,
+          "sapatas_por_lado": 48,
+          "sistema_komtrax": true
+        },
+        {
+          "id": "pc500lc",
+          "modelo": "PC500LC-10M0",
+          "marca": "Komatsu",
+          "motor": {
+            "modelo": "Komatsu SAA6D125E-5",
+            "cilindros": 6,
+            "cilindrada_L": 11.04,
+            "potencia_bruta_hp": 362,
+            "potencia_bruta_kw": 270,
+            "potencia_liquida_hp": 360,
+            "potencia_liquida_kw": 269,
+            "rpm_nominal": 1900,
+            "emissao": "PROCONVE MAR-1"
+          },
+          "peso_operacional_kg": { "min": 49400, "max": 51300 },
+          "capacidade_cacamba_m3": { "min": 3.50, "max": 3.50 },
+          "tanque_combustivel_L": 640,
+          "reservatorio_hidraulico_L": 279,
+          "velocidade_deslocamento_kmh": { "alta": 5.5, "media": 4.2, "baixa": 3.0 },
+          "forca_escavacao_cacamba_kN": 262,
+          "forca_fechamento_braco_kN": 235,
+          "vazao_bomba_Lmin": 690,
+          "profundidade_max_escavacao_mm": 6640,
+          "altura_max_escavacao_mm": 10200,
+          "alcance_max_escavacao_mm": 10945,
+          "raio_giro_traseiro_mm": 3765,
+          "sapatas_mm": [600, 700],
+          "roletes_inferiores": 8,
+          "roletes_superiores": 2,
+          "sapatas_por_lado": 49,
+          "sistema_komtrax": true
+        },
+        {
+          "id": "pc600lc",
+          "modelo": "PC600LC-8",
+          "marca": "Komatsu",
+          "motor": {
+            "modelo": "Komatsu SAA6D140E-5",
+            "cilindros": 6,
+            "cilindrada_L": 15.24,
+            "potencia_bruta_hp": 433,
+            "potencia_bruta_kw": 323,
+            "potencia_liquida_hp": 429,
+            "potencia_liquida_kw": 320,
+            "rpm_nominal": 1800,
+            "emissao": "EPA Tier 3 / EU Stage 3A"
+          },
+          "peso_operacional_kg": { "min": 63000, "max": 63000 },
+          "capacidade_cacamba_m3": { "min": 2.67, "max": 3.81 },
+          "tanque_combustivel_L": 880,
+          "reservatorio_hidraulico_L": 360,
+          "velocidade_deslocamento_kmh": { "alta": 4.9, "baixa": 3.0 },
+          "forca_escavacao_cacamba_kN": 300,
+          "forca_fechamento_braco_kN": 233,
+          "vazao_bomba_Lmin": 820,
+          "profundidade_max_escavacao_mm": 10225,
+          "altura_max_escavacao_mm": 12560,
+          "alcance_max_escavacao_mm": 14630,
+          "raio_giro_traseiro_mm": 3900,
+          "sapatas_mm": [600, 750, 900],
+          "roletes_inferiores": 9,
+          "roletes_superiores": 3,
+          "sapatas_por_lado": 52,
+          "sistema_komtrax": true
+        },
+        {
+          "id": "pc800lc",
+          "modelo": "PC800LC-8",
+          "marca": "Komatsu",
+          "motor": {
+            "modelo": "Komatsu SAA6D140E-5",
+            "cilindros": 6,
+            "cilindrada_L": 15.24,
+            "potencia_bruta_hp": 496,
+            "potencia_bruta_kw": 370,
+            "potencia_liquida_hp": 487,
+            "potencia_liquida_kw": 363,
+            "rpm_nominal": 1800,
+            "emissao": "EPA Tier 3 / EU Stage 3A"
+          },
+          "peso_operacional_kg": { "min": 74500, "max": 79900 },
+          "capacidade_cacamba_m3": { "min": 2.80, "max": 4.00 },
+          "tanque_combustivel_L": 980,
+          "reservatorio_hidraulico_L": 470,
+          "velocidade_deslocamento_kmh": { "alta": 4.2, "baixa": 2.8 },
+          "forca_escavacao_cacamba_kN": 364,
+          "forca_fechamento_braco_kN": 273,
+          "vazao_bomba_Lmin": 988,
+          "profundidade_max_escavacao_mm": 10595,
+          "altura_max_escavacao_mm": 12690,
+          "alcance_max_escavacao_mm": 15635,
+          "raio_giro_traseiro_mm": 4400,
+          "sapatas_mm": [610, 710, 810, 910, 1010],
+          "roletes_inferiores": 9,
+          "roletes_superiores": 3,
+          "sapatas_por_lado": 51,
+          "sistema_komtrax": true
+        },
+        {
+          "id": "pc1250",
+          "modelo": "PC1250-11",
+          "marca": "Komatsu",
+          "motor": {
+            "modelo": "Komatsu SAA6D170E-7",
+            "cilindros": 6,
+            "cilindrada_L": 23.15,
+            "potencia_bruta_hp": 775,
+            "potencia_bruta_kw": 578,
+            "potencia_liquida_hp": 750,
+            "potencia_liquida_kw": 560,
+            "rpm_nominal": 1800,
+            "emissao": "EPA Tier 2"
+          },
+          "peso_operacional_kg": { "min": 118600, "max": 118600 },
+          "capacidade_cacamba_m3": { "min": 6.70, "max": 8.43 },
+          "tanque_combustivel_L": 1360,
+          "reservatorio_hidraulico_L": 670,
+          "velocidade_deslocamento_kmh": { "alta": 3.3, "baixa": 2.3 },
+          "forca_escavacao_cacamba_kN": 570,
+          "forca_fechamento_braco_kN": 412,
+          "vazao_bomba_Lmin": 1588,
+          "profundidade_max_escavacao_mm": 7900,
+          "altura_max_escavacao_mm": 13000,
+          "alcance_max_escavacao_mm": 14070,
+          "raio_giro_traseiro_mm": 6415,
+          "sapatas_mm": [700],
+          "roletes_inferiores": 8,
+          "roletes_superiores": 3,
+          "sapatas_por_lado": 48,
+          "sistema_komtrax": true,
+          "sistema_komtraxplus": true
+        }
+      ],
+      "john_deere": [
+        {
+          "id": "jd130p",
+          "modelo": "130P",
+          "marca": "John Deere",
+          "motor": {
+            "modelo": "John Deere PowerTech 4045H",
+            "cilindros": 4,
+            "cilindrada_L": 4.5,
+            "potencia_liquida_hp": 97,
+            "potencia_liquida_kw": 72,
+            "rpm_nominal": 2000,
+            "emissao": "Tier 3"
+          },
+          "peso_operacional_kg": { "min": 14000, "max": 14500 },
+          "capacidade_cacamba_m3": { "min": 0.53, "max": 0.68 },
+          "tanque_combustivel_L": 280,
+          "velocidade_deslocamento_kmh": { "alta": 5.5, "baixa": 3.2 },
+          "profundidade_max_escavacao_mm": 5600,
+          "altura_max_escavacao_mm": 8780,
+          "alcance_max_escavacao_mm": 8480,
+          "sistema_jdlink": true
+        },
+        {
+          "id": "jd160p",
+          "modelo": "160P",
+          "marca": "John Deere",
+          "motor": {
+            "modelo": "John Deere PowerTech 4045H",
+            "cilindros": 4,
+            "cilindrada_L": 4.5,
+            "potencia_liquida_hp": 113,
+            "potencia_liquida_kw": 84,
+            "rpm_nominal": 2000,
+            "emissao": "Tier 3"
+          },
+          "peso_operacional_kg": { "min": 17000, "max": 17200 },
+          "capacidade_cacamba_m3": { "min": 0.67, "max": 0.86 },
+          "tanque_combustivel_L": 330,
+          "velocidade_deslocamento_kmh": { "alta": 5.5, "baixa": 3.2 },
+          "profundidade_max_escavacao_mm": 5910,
+          "altura_max_escavacao_mm": 9200,
+          "alcance_max_escavacao_mm": 8940,
+          "sistema_jdlink": true
+        },
+        {
+          "id": "jd200g",
+          "modelo": "200G",
+          "marca": "John Deere",
+          "motor": {
+            "modelo": "John Deere PowerTech PSS 4045",
+            "cilindros": 4,
+            "cilindrada_L": 4.5,
+            "potencia_liquida_hp": 127,
+            "potencia_liquida_kw": 95,
+            "rpm_nominal": 2000,
+            "emissao": "Final Tier 4"
+          },
+          "peso_operacional_kg": { "min": 20865, "max": 21140 },
+          "capacidade_cacamba_m3": { "min": 0.87, "max": 1.19 },
+          "tanque_combustivel_L": 380,
+          "velocidade_deslocamento_kmh": { "alta": 5.5, "baixa": 3.2 },
+          "profundidade_max_escavacao_mm": 6490,
+          "altura_max_escavacao_mm": 9600,
+          "alcance_max_escavacao_mm": 9780,
+          "sistema_jdlink": true
+        },
+        {
+          "id": "jd210p",
+          "modelo": "210P",
+          "marca": "John Deere",
+          "motor": {
+            "modelo": "John Deere PowerTech 6068H",
+            "cilindros": 6,
+            "cilindrada_L": 6.8,
+            "potencia_liquida_hp": 144,
+            "potencia_liquida_kw": 107,
+            "rpm_nominal": 1900,
+            "emissao": "Tier 3"
+          },
+          "peso_operacional_kg": { "min": 21800, "max": 22200 },
+          "capacidade_cacamba_m3": { "min": 0.87, "max": 1.19 },
+          "tanque_combustivel_L": 380,
+          "velocidade_deslocamento_kmh": { "alta": 5.5, "baixa": 3.2 },
+          "profundidade_max_escavacao_mm": 6580,
+          "altura_max_escavacao_mm": 9760,
+          "alcance_max_escavacao_mm": 9960,
+          "sistema_jdlink": true
+        },
+        {
+          "id": "jd250p",
+          "modelo": "250P",
+          "marca": "John Deere",
+          "motor": {
+            "modelo": "John Deere PowerTech 6068H",
+            "cilindros": 6,
+            "cilindrada_L": 6.8,
+            "potencia_liquida_hp": 178,
+            "potencia_liquida_kw": 133,
+            "rpm_nominal": 1900,
+            "emissao": "Tier 3"
+          },
+          "peso_operacional_kg": { "min": 26200, "max": 26700 },
+          "capacidade_cacamba_m3": { "min": 1.09, "max": 1.53 },
+          "tanque_combustivel_L": 450,
+          "velocidade_deslocamento_kmh": { "alta": 5.5, "baixa": 3.2 },
+          "profundidade_max_escavacao_mm": 7010,
+          "altura_max_escavacao_mm": 10280,
+          "alcance_max_escavacao_mm": 10560,
+          "sistema_jdlink": true
+        },
+        {
+          "id": "jd350p",
+          "modelo": "350P",
+          "marca": "John Deere",
+          "motor": {
+            "modelo": "John Deere PowerTech 6068H",
+            "cilindros": 6,
+            "cilindrada_L": 6.8,
+            "potencia_liquida_hp": 230,
+            "potencia_liquida_kw": 172,
+            "rpm_nominal": 1900,
+            "emissao": "Tier 3"
+          },
+          "peso_operacional_kg": { "min": 36800, "max": 37300 },
+          "capacidade_cacamba_m3": { "min": 1.53, "max": 2.10 },
+          "tanque_combustivel_L": 550,
+          "velocidade_deslocamento_kmh": { "alta": 5.5, "baixa": 3.0 },
+          "profundidade_max_escavacao_mm": 7320,
+          "altura_max_escavacao_mm": 10670,
+          "alcance_max_escavacao_mm": 11130,
+          "sistema_jdlink": true
+        },
+        {
+          "id": "jd470glc",
+          "modelo": "470GLC",
+          "marca": "John Deere",
+          "motor": {
+            "modelo": "John Deere PowerTech PSS 6090",
+            "cilindros": 6,
+            "cilindrada_L": 9.0,
+            "potencia_liquida_hp": 362,
+            "potencia_liquida_kw": 270,
+            "rpm_nominal": 1800,
+            "emissao": "Final Tier 4"
+          },
+          "peso_operacional_kg": { "min": 49300, "max": 50400 },
+          "capacidade_cacamba_m3": { "min": 2.40, "max": 3.10 },
+          "tanque_combustivel_L": 680,
+          "velocidade_deslocamento_kmh": { "alta": 4.8, "baixa": 2.9 },
+          "profundidade_max_escavacao_mm": 7800,
+          "altura_max_escavacao_mm": 11100,
+          "alcance_max_escavacao_mm": 12000,
+          "sistema_jdlink": true
+        }
+      ]
     }
   },
-  "wa200": {
-    "brand": "komatsu",
-    "brandLabel": "Komatsu",
-    "category": "Carregadeira",
-    "model": "WA200-6",
-    "weightClass": 10580,
-    "meta": "10,6 t · 128 HP",
-    "headline": {
-      "peso": "10.515–10.650 kg",
-      "potencia": "128 HP / 95,2 kW bruta",
-      "cacamba": "1,7–2,4 m³",
-      "forca_desagregacao": "9.500–10.450 kgf",
-      "carga_tomb_artic": "7.965–8.035 kg",
-      "altura_despejo": "2.760 mm",
-      "tanque": "177 L",
-      "vel_max": "34,5 km/h"
-    },
-    "sections": {
-      "Motor": {
-        "Modelo": "KOMATSU SAA4D107E-1",
-        "Tipo": "4 tempos, arrefecido a água",
-        "Aspiração": "Turboalimentado e pós-arrefecido",
-        "Cilindros": "4",
-        "Diâmetro x curso": "107 mm x 124 mm",
-        "Cilindrada": "4,46 L",
-        "Potência bruta SAE": "128 HP / 95,2 kW",
-        "Potência líquida ISO": "126 HP / 94 kW",
-        "Rotação nominal": "2.000 rpm",
-        "Acionamento ventilador": "Hidráulico",
-        "Injeção": "Common Rail / injeção direta",
-        "Padrão emissão": "PROCONVE/MAR-I"
-      },
-      "Transmissão": {
-        "Tipo": "Hidrostática HST, 1 bomba e 2 motores com seleção de velocidades",
-        "Vel 1a pneus 17.5-25": "4,0 a 13,0 km/h",
-        "Vel 2a": "13,0 km/h",
-        "Vel 3a": "20,0 km/h",
-        "Vel 4a máx": "34,5 km/h",
-        "Vel 4a pneus 20.5-25": "38,0 km/h"
-      },
-      "Sistema Hidráulico": {
-        "Bomba direcional": "Engrenagens — 85 L/min",
-        "Alívio sistema": "20,6 MPa (210 kgf/cm²)",
-        "Cilindro direcional": "2 un. — 70 mm x 453 mm",
-        "Bomba carregadeira": "Engrenagens — 54 L/min",
-        "Cilindro lança": "2 un. — 120 mm x 673,5 mm",
-        "Cilindro caçamba": "1 un. — 130 mm x 493 mm",
-        "Ciclo elevar": "5,9 s",
-        "Ciclo despejar": "1,4 s",
-        "Ciclo baixar": "3,6 s"
-      },
-      "Eixos e Freios": {
-        "Tração": "4 rodas",
-        "Eixo dianteiro": "Fixo, semiflutuante",
-        "Eixo traseiro": "Pino central, oscilação total 24°",
-        "Diferencial": "Torque proporcional",
-        "Freio serviço": "Disco banho de óleo, 4 rodas",
-        "Freio estacionamento": "Multi-discos banho de óleo"
-      },
-      "Capacidades de Reabastecimento": {
-        "Reservatório combustível": "177,0 L",
-        "Arrefecimento": "17,0 L",
-        "Motor": "15,5 L",
-        "Sistema hidráulico": "58,0 L",
-        "Eixos dianteiro e traseiro": "18,0 L",
-        "Caixa de transferência": "5,0 L"
-      },
-      "Dimensões pneus 17.5-25": {
-        "Bitola": "1.930 mm",
-        "Largura externa pneus": "2.375 mm",
-        "Distância entre eixos": "2.840 mm",
-        "Altura max. pino articulação": "3.635 mm",
-        "Altura livre ao solo": "425 mm",
-        "Altura total ROPS": "3.110 mm",
-        "Raio mínimo de giro": "5.100 mm"
-      },
-      "Caçamba Amontoamento": {
-        "Capacidade coroada": "2,0 m³",
-        "Capacidade rasa": "1,7 m³",
-        "Largura": "2.550 mm",
-        "Peso": "785 kg",
-        "Altura despejo 45°": "2.760 mm",
-        "Carga tombamento reta": "9.245 kg",
-        "Carga tombamento 38°": "7.965 kg",
-        "Força desagregação": "9.500 kgf",
-        "Peso operacional": "10.560 kg"
-      },
-      "Caçamba Escavação": {
-        "Capacidade coroada": "1,7 m³",
-        "Capacidade rasa": "1,4 m³",
-        "Largura": "2.550 mm",
-        "Peso": "740 kg",
-        "Carga tombamento reta": "9.305 kg",
-        "Carga tombamento 38°": "8.015 kg",
-        "Força desagregação": "10.450 kgf",
-        "Peso operacional": "10.515 kg"
-      },
-      "Caçamba Materiais Leves": {
-        "Capacidade coroada": "2,4 m³",
-        "Capacidade rasa": "2,0 m³",
-        "Força desagregação": "8.300 kgf",
-        "Peso operacional": "10.650 kg"
-      },
-      "Sistema Elétrico": {
-        "Alternador": "60 A",
-        "Baterias": "2 x 65 Ah, 12 V",
-        "Motor de partida": "24 V, 4,5 kW"
-      },
-      "Eficiência e Tecnologia": {
-        "Telemetria": "KOMTRAX padrão",
-        "Indicador ECO": "Sim",
-        "Modo-S": "Reduz tração em superfícies escorregadias",
-        "Controle de tração": "3 estágios de ajuste",
-        "Ventilador": "Inversão automática 2 min a cada 2h",
-        "Nível ruído externo": "107 dB(A)"
-      },
-      "Cabine": {
-        "Estrutura": "ROPS/FOPS",
-        "Cabine pressurizada": "Sim",
-        "Coluna da direção": "Inclinável",
-        "Alavanca controle": "PPC Controle Proporcional de Pressão",
-        "Visibilidade": "Sem colunas, vidro plano frontal"
-      }
+  "carregadeira": {
+    "label": "Carregadeira",
+    "machines": {
+      "komatsu": [
+        {
+          "id": "wa150",
+          "modelo": "WA150-6",
+          "marca": "Komatsu",
+          "motor": {
+            "modelo": "Komatsu SAA4D95LE-5",
+            "cilindros": 4,
+            "cilindrada_L": 3.26,
+            "potencia_bruta_hp": 103,
+            "potencia_liquida_hp": 98,
+            "potencia_liquida_kw": 73,
+            "rpm_nominal": 2200,
+            "emissao": "PROCONVE MAR-1"
+          },
+          "peso_operacional_kg": { "min": 8050, "max": 8120 },
+          "capacidade_cacamba_m3": { "min": 1.3, "max": 1.7 },
+          "tanque_combustivel_L": 133,
+          "velocidade_max_kmh": 37,
+          "forca_arrancamento_kN": 62,
+          "altura_max_despejo_mm": 2680,
+          "sistema_komtrax": true
+        },
+        {
+          "id": "wa200",
+          "modelo": "WA200-6",
+          "marca": "Komatsu",
+          "motor": {
+            "modelo": "Komatsu SAA4D107E-1",
+            "cilindros": 4,
+            "cilindrada_L": 4.46,
+            "potencia_bruta_hp": 133,
+            "potencia_liquida_hp": 126,
+            "potencia_liquida_kw": 94,
+            "rpm_nominal": 2200,
+            "emissao": "PROCONVE MAR-1"
+          },
+          "peso_operacional_kg": { "min": 10515, "max": 10650 },
+          "capacidade_cacamba_m3": { "min": 1.7, "max": 2.4 },
+          "tanque_combustivel_L": 177,
+          "velocidade_max_kmh": 37,
+          "forca_arrancamento_kN": 83,
+          "altura_max_despejo_mm": 2830,
+          "sistema_komtrax": true
+        },
+        {
+          "id": "wa320",
+          "modelo": "WA320-6",
+          "marca": "Komatsu",
+          "motor": {
+            "modelo": "Komatsu SAA6D107E-1",
+            "cilindros": 6,
+            "cilindrada_L": 6.69,
+            "potencia_bruta_hp": 177,
+            "potencia_liquida_hp": 167,
+            "potencia_liquida_kw": 125,
+            "rpm_nominal": 2200,
+            "emissao": "PROCONVE MAR-1"
+          },
+          "peso_operacional_kg": { "min": 14550, "max": 14550 },
+          "capacidade_cacamba_m3": { "min": 2.7, "max": 2.7 },
+          "tanque_combustivel_L": 245,
+          "velocidade_max_kmh": 37,
+          "forca_arrancamento_kN": 118,
+          "altura_max_despejo_mm": 3000,
+          "sistema_komtrax": true
+        },
+        {
+          "id": "wa380",
+          "modelo": "WA380-6",
+          "marca": "Komatsu",
+          "motor": {
+            "modelo": "Komatsu SAA6D107E-1",
+            "cilindros": 6,
+            "cilindrada_L": 6.69,
+            "potencia_bruta_hp": 203,
+            "potencia_liquida_hp": 191,
+            "potencia_liquida_kw": 142,
+            "rpm_nominal": 2200,
+            "emissao": "PROCONVE MAR-1"
+          },
+          "peso_operacional_kg": { "min": 17850, "max": 18160 },
+          "capacidade_cacamba_m3": { "min": 2.9, "max": 4.0 },
+          "tanque_combustivel_L": 300,
+          "velocidade_max_kmh": 38,
+          "forca_arrancamento_kN": 153,
+          "altura_max_despejo_mm": 3060,
+          "sistema_komtrax": true
+        },
+        {
+          "id": "wa430",
+          "modelo": "WA430-6",
+          "marca": "Komatsu",
+          "motor": {
+            "modelo": "Komatsu SAA6D114E-3",
+            "cilindros": 6,
+            "cilindrada_L": 8.27,
+            "potencia_bruta_hp": 246,
+            "potencia_liquida_hp": 231,
+            "potencia_liquida_kw": 172,
+            "rpm_nominal": 2000,
+            "emissao": "PROCONVE MAR-1"
+          },
+          "peso_operacional_kg": { "min": 18820, "max": 19305 },
+          "capacidade_cacamba_m3": { "min": 3.1, "max": 4.6 },
+          "tanque_combustivel_L": 325,
+          "velocidade_max_kmh": 38,
+          "forca_arrancamento_kN": 175,
+          "altura_max_despejo_mm": 3115,
+          "sistema_komtrax": true
+        },
+        {
+          "id": "wa470",
+          "modelo": "WA470-6",
+          "marca": "Komatsu",
+          "motor": {
+            "modelo": "Komatsu SAA6D125E-5",
+            "cilindros": 6,
+            "cilindrada_L": 11.04,
+            "potencia_bruta_hp": 290,
+            "potencia_liquida_hp": 272,
+            "potencia_liquida_kw": 203,
+            "rpm_nominal": 2000,
+            "emissao": "PROCONVE MAR-1"
+          },
+          "peso_operacional_kg": { "min": 23560, "max": 23790 },
+          "capacidade_cacamba_m3": { "min": 3.6, "max": 4.2 },
+          "tanque_combustivel_L": 413,
+          "velocidade_max_kmh": 38,
+          "forca_arrancamento_kN": 209,
+          "altura_max_despejo_mm": 3200,
+          "sistema_komtrax": true
+        },
+        {
+          "id": "wa500",
+          "modelo": "WA500-6",
+          "marca": "Komatsu",
+          "motor": {
+            "modelo": "Komatsu SAA6D140E-5",
+            "cilindros": 6,
+            "cilindrada_L": 15.24,
+            "potencia_bruta_hp": 377,
+            "potencia_liquida_hp": 353,
+            "potencia_liquida_kw": 263,
+            "rpm_nominal": 1900,
+            "emissao": "PROCONVE MAR-1"
+          },
+          "peso_operacional_kg": { "min": 31915, "max": 35220 },
+          "capacidade_cacamba_m3": { "min": 4.3, "max": 5.6 },
+          "tanque_combustivel_L": 473,
+          "velocidade_max_kmh": 37,
+          "forca_arrancamento_kN": 280,
+          "altura_max_despejo_mm": 3430,
+          "sistema_komtrax": true
+        },
+        {
+          "id": "wa500sh",
+          "modelo": "WA500-8SH",
+          "marca": "Komatsu",
+          "motor": {
+            "cilindros": 6,
+            "potencia_liquida_hp": 357,
+            "potencia_liquida_kw": 266,
+            "emissao": "PROCONVE MAR-1"
+          },
+          "peso_operacional_kg": { "min": 38145, "max": 38145 },
+          "capacidade_cacamba_m3": null,
+          "tipo_cacamba": "Stone Handler",
+          "tanque_combustivel_L": null,
+          "sistema_komtrax": true
+        },
+        {
+          "id": "wa600",
+          "modelo": "WA600-6",
+          "marca": "Komatsu",
+          "motor": {
+            "modelo": "Komatsu SAA6D170E-5",
+            "cilindros": 6,
+            "cilindrada_L": 23.15,
+            "potencia_bruta_hp": 563,
+            "potencia_liquida_hp": 527,
+            "potencia_liquida_kw": 393,
+            "rpm_nominal": 1800,
+            "emissao": "PROCONVE MAR-1"
+          },
+          "peso_operacional_kg": { "min": 52300, "max": 52900 },
+          "capacidade_cacamba_m3": { "min": 6.4, "max": 7.0 },
+          "tanque_combustivel_L": 718,
+          "velocidade_max_kmh": 36,
+          "forca_arrancamento_kN": 440,
+          "altura_max_despejo_mm": 3800,
+          "sistema_komtrax": true
+        },
+        {
+          "id": "wa600sh",
+          "modelo": "WA600-8SH",
+          "marca": "Komatsu",
+          "motor": {
+            "cilindros": 6,
+            "potencia_liquida_hp": 530,
+            "potencia_liquida_kw": 396,
+            "emissao": "PROCONVE MAR-1"
+          },
+          "peso_operacional_kg": { "min": 60800, "max": 60800 },
+          "capacidade_cacamba_m3": null,
+          "tipo_cacamba": "Stone Handler",
+          "tanque_combustivel_L": null,
+          "sistema_komtrax": true
+        }
+      ],
+      "john_deere": [
+        {
+          "id": "jd444g",
+          "modelo": "444G",
+          "marca": "John Deere",
+          "motor": {
+            "modelo": "John Deere PowerTech PSS 4045",
+            "cilindros": 4,
+            "cilindrada_L": 4.5,
+            "potencia_liquida_hp": 107,
+            "potencia_liquida_kw": 80,
+            "rpm_nominal": 2200,
+            "emissao": "Final Tier 4"
+          },
+          "peso_operacional_kg": { "min": 11793, "max": 12088 },
+          "capacidade_cacamba_m3": { "min": 1.9, "max": 2.5 },
+          "tanque_combustivel_L": 210,
+          "velocidade_max_kmh": 39,
+          "sistema_jdlink": true
+        },
+        {
+          "id": "jd524p",
+          "modelo": "524P",
+          "marca": "John Deere",
+          "motor": {
+            "modelo": "John Deere PowerTech 4045H",
+            "cilindros": 4,
+            "cilindrada_L": 4.5,
+            "potencia_liquida_hp": 120,
+            "potencia_liquida_kw": 89,
+            "rpm_nominal": 2200,
+            "emissao": "Tier 3"
+          },
+          "peso_operacional_kg": { "min": 12700, "max": 13100 },
+          "capacidade_cacamba_m3": { "min": 2.2, "max": 2.8 },
+          "tanque_combustivel_L": 230,
+          "velocidade_max_kmh": 39,
+          "sistema_jdlink": true
+        },
+        {
+          "id": "jd544p",
+          "modelo": "544P",
+          "marca": "John Deere",
+          "motor": {
+            "modelo": "John Deere PowerTech 4045H",
+            "cilindros": 4,
+            "cilindrada_L": 4.5,
+            "potencia_liquida_hp": 144,
+            "potencia_liquida_kw": 107,
+            "rpm_nominal": 2200,
+            "emissao": "Tier 3"
+          },
+          "peso_operacional_kg": { "min": 14800, "max": 15300 },
+          "capacidade_cacamba_m3": { "min": 2.5, "max": 3.1 },
+          "tanque_combustivel_L": 280,
+          "velocidade_max_kmh": 39,
+          "sistema_jdlink": true
+        },
+        {
+          "id": "jd624p",
+          "modelo": "624P",
+          "marca": "John Deere",
+          "motor": {
+            "modelo": "John Deere PowerTech 6068H",
+            "cilindros": 6,
+            "cilindrada_L": 6.8,
+            "potencia_liquida_hp": 178,
+            "potencia_liquida_kw": 133,
+            "rpm_nominal": 2100,
+            "emissao": "Tier 3"
+          },
+          "peso_operacional_kg": { "min": 18600, "max": 19200 },
+          "capacidade_cacamba_m3": { "min": 3.1, "max": 3.8 },
+          "tanque_combustivel_L": 340,
+          "velocidade_max_kmh": 40,
+          "sistema_jdlink": true
+        },
+        {
+          "id": "jd724p",
+          "modelo": "724P",
+          "marca": "John Deere",
+          "motor": {
+            "modelo": "John Deere PowerTech 6068H",
+            "cilindros": 6,
+            "cilindrada_L": 6.8,
+            "potencia_liquida_hp": 212,
+            "potencia_liquida_kw": 158,
+            "rpm_nominal": 2100,
+            "emissao": "Tier 3"
+          },
+          "peso_operacional_kg": { "min": 21600, "max": 22200 },
+          "capacidade_cacamba_m3": { "min": 3.6, "max": 4.6 },
+          "tanque_combustivel_L": 400,
+          "velocidade_max_kmh": 40,
+          "sistema_jdlink": true
+        },
+        {
+          "id": "jd744k",
+          "modelo": "744K-II / 824K-II / 844K-II",
+          "marca": "John Deere",
+          "motor": {
+            "modelo": "John Deere PowerTech 6068H",
+            "cilindros": 6,
+            "cilindrada_L": 6.8,
+            "potencia_liquida_hp": 254,
+            "potencia_liquida_kw": 190,
+            "rpm_nominal": 2100,
+            "emissao": "Tier 3"
+          },
+          "peso_operacional_kg": { "min": 24000, "max": 28000 },
+          "capacidade_cacamba_m3": { "min": 4.2, "max": 6.5 },
+          "tanque_combustivel_L": 450,
+          "velocidade_max_kmh": 40,
+          "sistema_jdlink": true
+        },
+        {
+          "id": "jd744p",
+          "modelo": "744P",
+          "marca": "John Deere",
+          "motor": {
+            "modelo": "John Deere PowerTech 6068H",
+            "cilindros": 6,
+            "cilindrada_L": 6.8,
+            "potencia_liquida_hp": 254,
+            "potencia_liquida_kw": 190,
+            "rpm_nominal": 2100,
+            "emissao": "Tier 3"
+          },
+          "peso_operacional_kg": { "min": 25200, "max": 26000 },
+          "capacidade_cacamba_m3": { "min": 4.2, "max": 5.4 },
+          "tanque_combustivel_L": 470,
+          "velocidade_max_kmh": 40,
+          "sistema_jdlink": true
+        },
+        {
+          "id": "jd844p",
+          "modelo": "844P",
+          "marca": "John Deere",
+          "motor": {
+            "modelo": "John Deere PowerTech 6090H",
+            "cilindros": 6,
+            "cilindrada_L": 9.0,
+            "potencia_liquida_hp": 365,
+            "potencia_liquida_kw": 272,
+            "rpm_nominal": 1900,
+            "emissao": "Tier 3"
+          },
+          "peso_operacional_kg": { "min": 40000, "max": 42000 },
+          "capacidade_cacamba_m3": { "min": 6.5, "max": 8.0 },
+          "tanque_combustivel_L": 700,
+          "velocidade_max_kmh": 38,
+          "sistema_jdlink": true
+        },
+        {
+          "id": "jd_serie_l",
+          "modelo": "Série L",
+          "marca": "John Deere",
+          "motor": {
+            "cilindros": 6,
+            "emissao": "Final Tier 4"
+          },
+          "peso_operacional_kg": { "min": 18000, "max": 45000 },
+          "capacidade_cacamba_m3": { "min": 3.0, "max": 8.5 },
+          "sistema_jdlink": true
+        }
+      ]
     }
   },
-  "jd130p": {
-    "brand": "deere",
-    "brandLabel": "John Deere",
-    "category": "Escavadeira",
-    "model": "JD 130 P",
-    "weightClass": 13900,
-    "meta": "14,0 t · 93 HP",
-    "notes": {
-      "cacamba": "Prospecto JD não informa faixa oficial. 0,75 m³ é a caçamba de referência usada para cálculo de peso operacional."
-    },
-    "headline": {
-      "peso": "13.822–13.984 kg",
-      "potencia": "93 HP / 69 kW",
-      "cacamba": "0,75 m³ *",
-      "forca_cacamba": "96 kN (ISO)",
-      "forca_braco": "67 kN (ISO)",
-      "tanque": "280 L",
-      "vel_max": "5,5 km/h",
-      "tracao": "11.217 kg",
-      "vel_giro": "13,3 rpm"
-    },
-    "sections": {
-      "Motor": {
-        "Fabricante e modelo": "John Deere 4045H",
-        "Padrão emissão": "Tier 3 EPA / Estágio IIIA EU",
-        "Potência líquida ISO 9249": "69 kW (93 HP) a 2.000 rpm",
-        "Cilindros": "4",
-        "Deslocamento": "4,5 L",
-        "Capacidade desnível": "70% (35 graus)",
-        "Aspiração": "Turboalimentado, arrefecedor ar-ar"
-      },
-      "Transmissão": {
-        "Tipo": "2 velocidades com câmbio automático",
-        "Vel. baixa": "3,3 km/h",
-        "Vel. alta": "5,5 km/h",
-        "Força de tração": "11.217 kg"
-      },
-      "Sistema Hidráulico": {
-        "Tipo": "Centro aberto, operado por piloto",
-        "Bombas principais": "2 bombas pistão axial deslocamento variável",
-        "Fluxo máx cada bomba": "105 L/min",
-        "Pressão implemento": "34.336 kPa (4.980 psi)",
-        "Pressão deslocamento": "34.366 kPa (4.984 psi)",
-        "Pressão giro": "32.300 kPa (4.685 psi)",
-        "Amplificação potência": "36.300 kPa (5.265 psi)",
-        "Cilindro lança": "2 un. — 105 mm x 940 mm x 70 mm",
-        "Cilindro braço": "1 un. — 115 mm x 1.135 mm x 80 mm",
-        "Cilindro caçamba": "1 un. — 100 mm x 874 mm x 70 mm"
-      },
-      "Sistema Elétrico": {
-        "Baterias": "2 x 12 V",
-        "Alternador": "80 A",
-        "Luzes": "6 LED padrão"
-      },
-      "Material Rodante": {
-        "Roletes transportador cada lado": "1",
-        "Roletes esteira cada lado": "7",
-        "Sapatas cada lado": "46",
-        "Ajuste esteira": "Hidráulico",
-        "Corrente": "Vedada e lubrificada",
-        "Pressão solo sapata 600 mm": "34,8 kPa",
-        "Pressão solo sapata 700 mm": "30,3 kPa"
-      },
-      "Mecanismo de Giro": {
-        "Velocidade": "13,3 rpm",
-        "Torque": "34.000 Nm"
-      },
-      "Capacidades de Reabastecimento": {
-        "Tanque combustível": "280,0 L",
-        "Líquido arrefecimento": "23,5 L",
-        "Óleo do motor": "14,5 L",
-        "Engrenagem giro": "3,2 L",
-        "Engrenagem deslocamento cada": "4,0 L",
-        "Sistema hidráulico": "185,0 L",
-        "Tanque hidráulico": "69,0 L",
-        "Graxa rolamento giro": "5,0 kg"
-      },
-      "Pesos e Componentes": {
-        "Sapata 600 mm": "13.822 kg",
-        "Sapata 700 mm": "13.984 kg",
-        "Lança 4,6 m": "1.057 kg",
-        "Braço 2,52 m": "530 kg"
-      },
-      "Dimensões Operacionais braço 2,52m": {
-        "Força braço ISO": "67 kN",
-        "Força caçamba ISO": "96 kN",
-        "Alcance máx.": "8,32 m",
-        "Profundidade máx.": "5,57 m",
-        "Altura corte máx.": "8,60 m",
-        "Altura despejo máx.": "6,19 m",
-        "Raio giro mínimo": "2,40 m",
-        "Parede vertical máx.": "5,02 m"
-      },
-      "Dimensões da Máquina": {
-        "Comprimento total": "7,70 m",
-        "Altura total": "2,87 m",
-        "Comprimento material rodante": "3,75 m",
-        "Largura total sapata 600 mm": "2,59 m",
-        "Largura total sapata 700 mm": "2,69 m",
-        "Distância ao solo": "410 mm",
-        "Raio de giro traseiro": "2,19 m"
-      },
-      "Cabine": {
-        "Estrutura": "EPC ISO 12117-2 e FOPS Nível 1 ISO 10262",
-        "Assento": "Suspensão mecânica padrão, pneumática aquecida opcional",
-        "Climatizador": "Automático / AC / aquecedor / pressurizador",
-        "Padrão controle": "SAE com 2 alavancas",
-        "Cinto": "51 mm, não retrátil",
-        "Câmera": "Opcional"
-      },
-      "Conectividade": {
-        "Telemetria": "JDLink básica",
-        "Service ADVISOR Remoto": "Sim — diagnóstico sem técnico no campo",
-        "Tecnologia": "Powerwise Plus — amplificação hidráulica",
-        "Redução consumo": "Até 10% vs modelo anterior",
-        "Modos potência": "3"
-      }
+  "motoniveladora": {
+    "label": "Motoniveladora",
+    "machines": {
+      "komatsu": [
+        {
+          "id": "gd535",
+          "modelo": "GD535-5",
+          "marca": "Komatsu",
+          "motor": {
+            "modelo": "Komatsu SAA6D107E-1",
+            "cilindros": 6,
+            "cilindrada_L": 6.69,
+            "potencia_bruta_hp": 160,
+            "potencia_liquida_hp": 151,
+            "potencia_liquida_kw": 113,
+            "rpm_nominal": 2200,
+            "emissao": "PROCONVE MAR-1"
+          },
+          "tracao": "4WD",
+          "peso_operacional_kg": { "min": 14300, "max": 15700 },
+          "lamina_mm": 3710,
+          "tanque_combustivel_L": 271,
+          "velocidade_max_kmh": 36.7,
+          "forca_tracao_lamina_kN": 122,
+          "comprimento_total_mm": 8530,
+          "sistema_komtrax": true
+        },
+        {
+          "id": "gd655",
+          "modelo": "GD655-5",
+          "marca": "Komatsu",
+          "motor": {
+            "modelo": "Komatsu SAA6D107E-1",
+            "cilindros": 6,
+            "cilindrada_L": 6.69,
+            "potencia_bruta_hp": 231,
+            "potencia_liquida_hp": 218,
+            "potencia_liquida_kw": 163,
+            "rpm_nominal": 2200,
+            "emissao": "PROCONVE MAR-1"
+          },
+          "tracao": "4WD",
+          "peso_operacional_kg": { "min": 16200, "max": 18400 },
+          "lamina_mm": 4320,
+          "tanque_combustivel_L": 416,
+          "velocidade_max_kmh": 37.4,
+          "forca_tracao_lamina_kN": 161,
+          "comprimento_total_mm": 9480,
+          "sistema_komtrax": true
+        }
+      ],
+      "john_deere": [
+        {
+          "id": "jd620p",
+          "modelo": "620P",
+          "marca": "John Deere",
+          "motor": {
+            "modelo": "John Deere PowerTech 6,8L",
+            "cilindros": 6,
+            "cilindrada_L": 6.8,
+            "potencia_liquida_kw_max": 160,
+            "potencia_liquida_hp_max": 215,
+            "emissao": "Tier 3 MAR-I"
+          },
+          "tracao": "4WD",
+          "peso_base_kg": 14904,
+          "peso_tipico_kg": 17535,
+          "lamina_m": 3.66,
+          "tanque_combustivel_L": 303,
+          "velocidade_max_kmh": 45.5,
+          "transmissao": "PowerShift Plus 8F/8R",
+          "sistema_jdlink": true
+        },
+        {
+          "id": "jd622p",
+          "modelo": "622P",
+          "marca": "John Deere",
+          "motor": {
+            "modelo": "John Deere PowerTech 6,8L",
+            "cilindros": 6,
+            "cilindrada_L": 6.8,
+            "potencia_liquida_kw_max": 168,
+            "potencia_liquida_hp_max": 225,
+            "emissao": "Tier 3 MAR-I"
+          },
+          "tracao": "6WD",
+          "peso_base_kg": 16038,
+          "peso_tipico_kg": 18300,
+          "lamina_m": 3.66,
+          "tanque_combustivel_L": 303,
+          "velocidade_max_kmh": 45.5,
+          "transmissao": "PowerShift Plus 8F/8R",
+          "sistema_jdlink": true
+        },
+        {
+          "id": "jd670p",
+          "modelo": "670P",
+          "marca": "John Deere",
+          "motor": {
+            "modelo": "John Deere PowerTech 9,0L",
+            "cilindros": 6,
+            "cilindrada_L": 9.0,
+            "potencia_liquida_kw_max": 175,
+            "potencia_liquida_hp_max": 235,
+            "emissao": "Tier 3 MAR-I"
+          },
+          "tracao": "4WD",
+          "peso_base_kg": 15530,
+          "peso_tipico_kg": 18600,
+          "lamina_m": 3.66,
+          "tanque_combustivel_L": 416.5,
+          "velocidade_max_kmh": 45.5,
+          "transmissao": "PowerShift Plus 8F/8R",
+          "sistema_jdlink": true
+        },
+        {
+          "id": "jd672p",
+          "modelo": "672P",
+          "marca": "John Deere",
+          "motor": {
+            "modelo": "John Deere PowerTech 9,0L",
+            "cilindros": 6,
+            "cilindrada_L": 9.0,
+            "potencia_liquida_kw_max": 190,
+            "potencia_liquida_hp_max": 255,
+            "emissao": "Tier 3 MAR-I"
+          },
+          "tracao": "6WD",
+          "peso_base_kg": 16665,
+          "peso_tipico_kg": 19800,
+          "lamina_m": 3.66,
+          "tanque_combustivel_L": 416.5,
+          "velocidade_max_kmh": 45.5,
+          "transmissao": "PowerShift Plus 8F/8R",
+          "sistema_jdlink": true
+        },
+        {
+          "id": "jd770p",
+          "modelo": "770P",
+          "marca": "John Deere",
+          "motor": {
+            "modelo": "John Deere PowerTech 9,0L",
+            "cilindros": 6,
+            "cilindrada_L": 9.0,
+            "potencia_liquida_kw_max": 187,
+            "potencia_liquida_hp_max": 250,
+            "emissao": "Tier 3 MAR-I"
+          },
+          "tracao": "4WD",
+          "peso_base_kg": 15780,
+          "peso_tipico_kg": 18900,
+          "lamina_m": 3.66,
+          "tanque_combustivel_L": 416.5,
+          "velocidade_max_kmh": 45.5,
+          "transmissao": "PowerShift Plus 8F/8R",
+          "sistema_jdlink": true
+        },
+        {
+          "id": "jd772p",
+          "modelo": "772P",
+          "marca": "John Deere",
+          "motor": {
+            "modelo": "John Deere PowerTech 9,0L",
+            "cilindros": 6,
+            "cilindrada_L": 9.0,
+            "potencia_liquida_kw_max": 205,
+            "potencia_liquida_hp_max": 275,
+            "emissao": "Tier 3 MAR-I"
+          },
+          "tracao": "6WD",
+          "peso_base_kg": 16892,
+          "peso_tipico_kg": 20100,
+          "lamina_m": 3.66,
+          "tanque_combustivel_L": 416.5,
+          "velocidade_max_kmh": 45.5,
+          "transmissao": "PowerShift Plus 8F/8R",
+          "sistema_jdlink": true
+        },
+        {
+          "id": "jd870p",
+          "modelo": "870P",
+          "marca": "John Deere",
+          "motor": {
+            "modelo": "John Deere PowerTech 9,0L",
+            "cilindros": 6,
+            "cilindrada_L": 9.0,
+            "potencia_liquida_kw_max": 209,
+            "potencia_liquida_hp_max": 280,
+            "emissao": "Tier 3 MAR-I"
+          },
+          "tracao": "4WD",
+          "peso_base_kg": 16456,
+          "peso_tipico_kg": 19700,
+          "lamina_m": 4.27,
+          "tanque_combustivel_L": 416.5,
+          "velocidade_max_kmh": 45.5,
+          "transmissao": "PowerShift Plus 8F/8R",
+          "sistema_jdlink": true
+        },
+        {
+          "id": "jd872p",
+          "modelo": "872P",
+          "marca": "John Deere",
+          "motor": {
+            "modelo": "John Deere PowerTech 9,0L",
+            "cilindros": 6,
+            "cilindrada_L": 9.0,
+            "potencia_liquida_kw_max": 209,
+            "potencia_liquida_hp_max": 280,
+            "emissao": "Tier 3 MAR-I"
+          },
+          "tracao": "6WD",
+          "peso_base_kg": 17419,
+          "peso_tipico_kg": 20800,
+          "lamina_m": 4.27,
+          "tanque_combustivel_L": 397,
+          "velocidade_max_kmh": 45.5,
+          "transmissao": "PowerShift Plus 8F/8R",
+          "sistema_jdlink": true
+        }
+      ]
     }
   },
-  "jd444g": {
-    "brand": "deere",
-    "brandLabel": "John Deere",
-    "category": "Carregadeira",
-    "model": "JD 444 G",
-    "weightClass": 10450,
-    "meta": "10,5 t · 124 HP",
-    "headline": {
-      "peso": "10.026–10.880 kg",
-      "potencia": "124 HP / 92 kW líquida",
-      "cacamba": "1,6–1,9 m³",
-      "forca_desagregacao": "8.000 kgf",
-      "carga_tomb_artic": "6.606–6.120 kg",
-      "altura_despejo": "2.650 mm",
-      "tanque": "190 L",
-      "vel_max": "36 km/h"
-    },
-    "sections": {
-      "Motor": {
-        "Fabricante e modelo": "John Deere PowerTech E 4045H",
-        "Padrão emissão": "Tier 3 MAR-I / Estágio IIIA EU",
-        "Cilindros": "4",
-        "Cilindrada": "4,5 L",
-        "Potência líquida ISO": "92 kW (124 HP) a 2.100 rpm",
-        "Potência bruta máx ISO": "97 kW (130 HP) a 2.100 rpm",
-        "Torque bruto máx": "525 Nm a 1.600 rpm",
-        "Elevação torque líquido": "26%",
-        "Injeção": "Common Rail alta pressão",
-        "Aspiração": "Turbocompressor com carga de ar resfriada"
-      },
-      "Transmissão": {
-        "Tipo": "PowerShift de contraeixo, estágio único",
-        "Controle": "Modulado eletronicamente, adaptável",
-        "Modos": "Manual / automático 1a–5a ou 2a–5a",
-        "Vel 1a frente": "7,3 km/h",
-        "Vel 2a frente": "12,1 km/h",
-        "Vel 3a frente": "23,1 km/h",
-        "Vel 4a frente": "36,0 km/h"
-      },
-      "Eixos e Freios": {
-        "Diferenciais": "Patinagem limitada ZF",
-        "Oscilação eixo traseiro": "24° (12° cada direção)",
-        "Freio serviço": "Multi-discos refrigerado a óleo",
-        "Freio estacionamento": "Multi-discos úmidos selados, mola automática"
-      },
-      "Sistema Hidráulico": {
-        "Bomba": "Pistão axial deslocamento variável, centro fechado",
-        "Vazão máx a 69 bar": "140 L/min",
-        "Pressão alívio": "24.821 kPa (3.600 psi)",
-        "Controles": "Joystick, válvula 2 funções",
-        "Direção": "Totalmente hidráulica ISO 5010",
-        "Ângulo articulação": "80° (40° cada)",
-        "Raio giro pneu externo": "4,74 m",
-        "Ciclo elevação": "5,9 s",
-        "Ciclo descarga": "1,0 s",
-        "Ciclo total": "9,3 s"
-      },
-      "Capacidades de Reabastecimento": {
-        "Tanque combustível": "190 L",
-        "Arrefecimento": "19 L",
-        "Óleo motor": "17,5 L",
-        "Reservatório transmissão": "18,5 L",
-        "Eixo dianteiro/traseiro cada": "22 L",
-        "Reservatório hidráulico": "92 L",
-        "Freio estacionamento": "0,35 L"
-      },
-      "Caçamba 1,9m3 Barra Z": {
-        "Capacidade coroada": "1,9 m³",
-        "Capacidade rasa": "1,6 m³",
-        "Largura": "2,52 m",
-        "Força desagregação": "8.000 kgf",
-        "Carga tomb. reta sem deflexão": "7.556 kg",
-        "Carga tomb. 40° sem deflexão": "6.606 kg",
-        "Carga tomb. 40° com deflexão": "6.120 kg",
-        "Carga nominal 50% ISO 14397-1": "3.303 kg",
-        "Peso operacional": "10.026 kg",
-        "Peso c/ contrapeso concreto": "10.880 kg"
-      },
-      "Com Engate Rápido e Caçamba": {
-        "Força desagregação": "6.700 kgf",
-        "Carga tomb. reta": "6.726 kg",
-        "Carga tomb. 40°": "5.833 kg",
-        "Peso operacional": "10.419 kg"
-      },
-      "Com Garfos": {
-        "Comprimento dente": "1,52 m",
-        "Carga nominal 50% ISO 14397-1": "1.797 kg",
-        "Peso operacional": "10.450 kg"
-      },
-      "Dimensões Caçamba 1,9m3": {
-        "Altura cabine": "3.126 mm",
-        "Distância entre eixos": "2.760 mm",
-        "Comprimento total": "6.747 m",
-        "Altura pino elevada": "3.580 mm",
-        "Altura despejo 45°": "2.650 mm",
-        "Raio giro carregador": "11,11 m",
-        "Prof. máx. escavação": "143 mm"
-      },
-      "Sistema Elétrico": {
-        "Sistema": "24 V — alternador 80 A",
-        "Baterias": "2 x 12 V, 950 CCA cada"
-      },
-      "Pneus Padrão": {
-        "Modelo": "Michelin 17.5 R 25, 1 Star L-3",
-        "Largura banda rodagem": "1.900 mm",
-        "Largura sobre pneus": "2.415 mm"
-      },
-      "Conectividade": {
-        "Telemetria": "JDLink de série",
-        "Connected Support": "Monitoramento remoto e diagnóstico preditivo",
-        "Redução combustível": "Até 18% vs líderes da categoria"
-      }
+  "trator_esteira": {
+    "label": "Trator de Esteira",
+    "machines": {
+      "komatsu": [
+        {
+          "id": "d51ex",
+          "modelo": "D51EX-22",
+          "marca": "Komatsu",
+          "motor": {
+            "modelo": "Komatsu SAA6D107E-1",
+            "cilindros": 6,
+            "cilindrada_L": 6.7,
+            "potencia_bruta_hp": 138,
+            "potencia_liquida_hp": 130,
+            "potencia_liquida_kw": 97,
+            "rpm_nominal": 2200,
+            "emissao": "PROCONVE MAR-1"
+          },
+          "peso_operacional_kg": { "min": 14000, "max": 14000 },
+          "tanque_combustivel_L": 270,
+          "velocidade_max_kmh": { "frente": 8.4, "re": 10.4 },
+          "forca_tracao_kN": 167,
+          "lamina_mm": 2640,
+          "sistema_komtrax": true
+        },
+        {
+          "id": "d61ex",
+          "modelo": "D61EX-23M0",
+          "marca": "Komatsu",
+          "motor": {
+            "modelo": "Komatsu SAA6D107E-1",
+            "cilindros": 6,
+            "cilindrada_L": 6.69,
+            "potencia_bruta_hp": 178,
+            "potencia_liquida_hp": 168,
+            "potencia_liquida_kw": 125,
+            "rpm_nominal": 2200,
+            "emissao": "PROCONVE MAR-1"
+          },
+          "peso_operacional_kg": { "min": 19770, "max": 19770 },
+          "tanque_combustivel_L": 372,
+          "velocidade_max_kmh": { "frente": 8.0, "re": 9.9 },
+          "forca_tracao_kN": 218,
+          "lamina_mm": 3030,
+          "sistema_komtrax": true
+        },
+        {
+          "id": "d85ex",
+          "modelo": "D85EX-15E0",
+          "marca": "Komatsu",
+          "motor": {
+            "modelo": "Komatsu SAA6D125E-5",
+            "cilindros": 6,
+            "cilindrada_L": 11.04,
+            "potencia_bruta_hp": 281,
+            "potencia_liquida_hp": 264,
+            "potencia_liquida_kw": 197,
+            "rpm_nominal": 2000,
+            "emissao": "PROCONVE MAR-1"
+          },
+          "peso_operacional_kg": { "min": 28100, "max": 28100 },
+          "tanque_combustivel_L": 490,
+          "velocidade_max_kmh": { "frente": 9.9, "re": 12.4 },
+          "forca_tracao_kN": 310,
+          "lamina_mm": 3710,
+          "sistema_komtrax": true
+        },
+        {
+          "id": "d155ax",
+          "modelo": "D155AX-6",
+          "marca": "Komatsu",
+          "motor": {
+            "modelo": "Komatsu SAA6D140E-5",
+            "cilindros": 6,
+            "cilindrada_L": 15.24,
+            "potencia_bruta_hp": 373,
+            "potencia_liquida_hp": 354,
+            "potencia_liquida_kw": 264,
+            "rpm_nominal": 1900,
+            "emissao": "PROCONVE MAR-1"
+          },
+          "peso_operacional_kg": { "min": 39500, "max": 39500 },
+          "tanque_combustivel_L": 625,
+          "velocidade_max_kmh": { "frente": 11.7, "re": 14.3 },
+          "forca_tracao_kN": 470,
+          "lamina_mm": 4560,
+          "sistema_komtrax": true
+        },
+        {
+          "id": "d275ax",
+          "modelo": "D275AX-5",
+          "marca": "Komatsu",
+          "motor": {
+            "modelo": "Komatsu SAA6D140E-5",
+            "cilindros": 6,
+            "cilindrada_L": 15.24,
+            "potencia_bruta_hp": 476,
+            "potencia_liquida_hp": 449,
+            "potencia_liquida_kw": 335,
+            "rpm_nominal": 1900,
+            "emissao": "PROCONVE MAR-1"
+          },
+          "peso_operacional_kg": { "min": 51530, "max": 51530 },
+          "tanque_combustivel_L": 840,
+          "velocidade_max_kmh": { "frente": 11.6, "re": 14.5 },
+          "forca_tracao_kN": 628,
+          "lamina_mm": 5270,
+          "sistema_komtrax": true
+        }
+      ],
+      "john_deere": [
+        {
+          "id": "jd700j",
+          "modelo": "700J-II",
+          "marca": "John Deere",
+          "motor": {
+            "modelo": "John Deere PowerTech E 6068",
+            "cilindros": 6,
+            "cilindrada_L": 6.8,
+            "potencia_liquida_hp": 125,
+            "potencia_liquida_kw": 93,
+            "rpm_nominal": 2200,
+            "emissao": "Tier 3"
+          },
+          "peso_operacional_kg": { "min": 14086, "max": 14086 },
+          "tanque_combustivel_L": 227,
+          "velocidade_max_kmh": { "frente": 9.5, "re": 10.4 },
+          "sistema_jdlink": true
+        },
+        {
+          "id": "jd750j",
+          "modelo": "750J-II",
+          "marca": "John Deere",
+          "motor": {
+            "modelo": "John Deere PowerTech E 6068",
+            "cilindros": 6,
+            "cilindrada_L": 6.8,
+            "potencia_liquida_hp": 155,
+            "potencia_liquida_kw": 116,
+            "rpm_nominal": 2200,
+            "emissao": "Tier 3"
+          },
+          "peso_operacional_kg": { "min": 17627, "max": 17627 },
+          "tanque_combustivel_L": 371,
+          "velocidade_max_kmh": { "frente": 9.5, "re": 10.4 },
+          "sistema_jdlink": true
+        },
+        {
+          "id": "jd850j",
+          "modelo": "850J-II",
+          "marca": "John Deere",
+          "motor": {
+            "modelo": "John Deere PowerTech Plus 6068",
+            "cilindros": 6,
+            "cilindrada_L": 6.8,
+            "potencia_liquida_hp": 205,
+            "potencia_liquida_kw": 153,
+            "rpm_nominal": 2200,
+            "emissao": "Tier 3"
+          },
+          "peso_operacional_kg": { "min": 20714, "max": 20714 },
+          "tanque_combustivel_L": 371,
+          "velocidade_max_kmh": { "frente": 9.5, "re": 10.4 },
+          "sistema_jdlink": true
+        }
+      ]
     }
   }
 }
